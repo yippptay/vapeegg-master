@@ -27,7 +27,7 @@
         "related_products_enable": true,
         "product_qty_enable": true,
         "share_enable": false,
-        "enable_payment_button": true,
+        "enable_payment_button": false,
         "print_enable": false,
         "pro_img_widthheight": "419x461",
         "pro_thumb_img_widthheight": "77x85",
