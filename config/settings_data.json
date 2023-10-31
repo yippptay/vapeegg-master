@@ -4,6 +4,7 @@
     "pre_loader_img": "shopify:\/\/shop_images\/250px-0175Togepi.png",
     "preloader_bg": "#ffffff",
     "sticky_icon_enabled": true,
+    "darkmode_enabled": true,
     "color_body_bg": "#ffffff",
     "color_body_text": "#666666",
     "price_color": "#dd2935",
