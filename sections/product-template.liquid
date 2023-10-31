@@ -280,11 +280,11 @@
                         {% endif %}
                         {% endif %}                    
                       </div>
-                      <hr class="hr">
+                      {% comment %} <hr class="hr"> {% endcomment %}
                       <p class="visually-hidden" data-product-status aria-live="polite" role="status"></p>
                       <p class="visually-hidden" data-loader-status aria-live="assertive" role="alert" aria-hidden="true">{{ 'products.product.loader_label' | t }}</p>
                       <div class="product-single__desc rte col-xs-12 padding_0" itemprop="description">{% if product.metafields.my_fields.description %} {{ product.metafields.my_fields.description }}{% endif %}</div>
-                      <hr class="hr">
+                      {% comment %} <hr class="hr"> {% endcomment %}
                       {% if product.metafields.spr.reviews != "" %}
                       <div class="review-wrap col-xs-12 padding_0"> <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
                         <a class="product-write-review"><i class="mdi mdi-lead-pencil"></i>{{ 'products.product.wirte_review' | t }}</a>

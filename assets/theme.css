@@ -11835,6 +11835,7 @@ a.product-lightbox-btn.tip-top img  {
     }
 .product-information .review-wrap  {
   padding:  0;
+  display:  none;
 }
 .product-information .product-information-inner .fixed-content .qty_attr  {
   padding:  0;
