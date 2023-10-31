@@ -69,7 +69,7 @@
     "enable_wishlist": false,
     "enable_compare": false,
     "enable_quantity": false,
-    "enable_countdown": true,
+    "enable_countdown": false,
     "display_color_variant": true,
     "display_size_variant": true,
     "show_vendor": false,
