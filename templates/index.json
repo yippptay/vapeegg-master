@@ -139,59 +139,6 @@
         "text2_position": "left"
       }
     },
-    "cms-services": {
-      "type": "cms-services",
-      "blocks": {
-        "1614071790f5f451ac-0": {
-          "type": "s_text",
-          "settings": {
-            "title": "Free Delivery",
-            "desc": "Free shipping on all order"
-          }
-        },
-        "1614071790f5f451ac-1": {
-          "type": "s_text",
-          "settings": {
-            "title": "Big Saving Shop",
-            "desc": "Save big every order"
-          }
-        },
-        "1614071790f5f451ac-2": {
-          "type": "s_text",
-          "settings": {
-            "title": "Online Support 24\/7",
-            "desc": "Support online 24 hours a day"
-          }
-        },
-        "662403ab-dbaf-495c-aaa0-6204a7e2c762": {
-          "type": "s_text",
-          "settings": {
-            "title": "Money Back Return",
-            "desc": "Back guarantee under 7 days"
-          }
-        },
-        "a45cb13b-35f3-48e6-8d70-0d964ca95475": {
-          "type": "s_text",
-          "settings": {
-            "title": "Member Discount",
-            "desc": "Onevery order over $120.00"
-          }
-        }
-      },
-      "block_order": [
-        "1614071790f5f451ac-0",
-        "1614071790f5f451ac-1",
-        "1614071790f5f451ac-2",
-        "662403ab-dbaf-495c-aaa0-6204a7e2c762",
-        "a45cb13b-35f3-48e6-8d70-0d964ca95475"
-      ],
-      "settings": {
-        "bg_color": "rgba(0,0,0,0)",
-        "title_color": "#222222",
-        "title_hover_color": "#dd2935",
-        "desc_color": "#666666"
-      }
-    },
     "1647407950a281eb2f": {
       "type": "category-feature",
       "blocks": {
@@ -387,6 +334,59 @@
         "button_hover_text": "#2b4861"
       }
     },
+    "cms-services": {
+      "type": "cms-services",
+      "blocks": {
+        "1614071790f5f451ac-0": {
+          "type": "s_text",
+          "settings": {
+            "title": "Free Delivery",
+            "desc": "Free shipping on all order"
+          }
+        },
+        "1614071790f5f451ac-1": {
+          "type": "s_text",
+          "settings": {
+            "title": "Big Saving Shop",
+            "desc": "Save big every order"
+          }
+        },
+        "1614071790f5f451ac-2": {
+          "type": "s_text",
+          "settings": {
+            "title": "Online Support 24\/7",
+            "desc": "Support online 24 hours a day"
+          }
+        },
+        "662403ab-dbaf-495c-aaa0-6204a7e2c762": {
+          "type": "s_text",
+          "settings": {
+            "title": "Money Back Return",
+            "desc": "Back guarantee under 7 days"
+          }
+        },
+        "a45cb13b-35f3-48e6-8d70-0d964ca95475": {
+          "type": "s_text",
+          "settings": {
+            "title": "Member Discount",
+            "desc": "Onevery order over $120.00"
+          }
+        }
+      },
+      "block_order": [
+        "1614071790f5f451ac-0",
+        "1614071790f5f451ac-1",
+        "1614071790f5f451ac-2",
+        "662403ab-dbaf-495c-aaa0-6204a7e2c762",
+        "a45cb13b-35f3-48e6-8d70-0d964ca95475"
+      ],
+      "settings": {
+        "bg_color": "rgba(0,0,0,0)",
+        "title_color": "#222222",
+        "title_hover_color": "#dd2935",
+        "desc_color": "#666666"
+      }
+    },
     "1647241500904e716d": {
       "type": "cms-blockbanner",
       "blocks": {
@@ -481,10 +481,10 @@
     "1647842144038494b0",
     "a2fd6f0b-d1e8-4d38-a0a7-28760e59f741",
     "1647426476a26bdc71",
-    "cms-services",
     "1647407950a281eb2f",
     "our_brand",
     "1650258784d34e02af",
+    "cms-services",
     "1647241500904e716d",
     "special-product",
     "3b66bbeb-2689-4237-b209-9d05640ec453"
