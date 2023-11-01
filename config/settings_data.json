@@ -431,25 +431,6 @@
               "tt_mn_subheading_color_fifth_inner": ""
             }
           },
-          "56456c17-7501-4ab6-a0a3-f36a2bca5760": {
-            "type": "tt_sub_menu_p",
-            "settings": {
-              "tt_sub_menu_ptitle": "Best-Sellers",
-              "tt_sub_menu_plink": "",
-              "tt_sub_menu_ptitle_show": true,
-              "tt_sub_menu_pwidth": "200px",
-              "tt_sub_menu_pcustomclass": "",
-              "tt_sub_menu_items_desktop": 2,
-              "tt_sub_menu_items_tablet": 2,
-              "tt_sub_menu_items_mobile": 1,
-              "tt_sub_menu_pproduts": "",
-              "tt_sub_menu_pprodut_item": "2",
-              "tt_sub_menu_potherprodut_1": "apple-imac-27-9th-gen-price-in-tanzania",
-              "tt_sub_menu_potherprodut_2": "french-door-refrigerator-in-fingerprint-resistant-stainless-steel",
-              "tt_sub_menu_potherprodut_3": "",
-              "tt_sub_menu_potherprodut_4": ""
-            }
-          },
           "790cc0c7-5d26-4222-a3a3-57eabdf3879e": {
             "type": "tt_mm_menu",
             "settings": {
@@ -1656,7 +1637,6 @@
         "block_order": [
           "089dda7f-6fde-43a1-86f5-4d5ce53ef90a",
           "6ac8cea2-3731-40ac-a2b6-3a1fa4c73908",
-          "56456c17-7501-4ab6-a0a3-f36a2bca5760",
           "790cc0c7-5d26-4222-a3a3-57eabdf3879e",
           "6206becf-a601-4fb1-82d3-260cbc9d84af",
           "3adc3ff7-5280-4753-b8fa-b06c6d7d8e74",
