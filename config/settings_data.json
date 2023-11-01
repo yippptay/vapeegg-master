@@ -1259,9 +1259,8 @@
           "4e35baa2-676e-4d97-87eb-391d43e878bf": {
             "type": "tt_mm_menu1",
             "settings": {
-              "title": "E-Liquid",
-              "button_link": "shopify:\/\/collections\/camera",
-              "tt_sub_menu_icon": "shopify:\/\/shop_images\/12.png",
+              "title": "Disposables",
+              "button_link": "",
               "tt_mn_class": "",
               "tt_mn_sub_heading": "",
               "tt_mn_subheading_bg": "#febb01",
