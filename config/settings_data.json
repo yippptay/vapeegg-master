@@ -1531,7 +1531,7 @@
               "tt_mn_subheading_color": "#ffffff",
               "tt_mn_sub_contentwidth1": "540px",
               "full_menu": false,
-              "tt_mn_show_sub1": false,
+              "tt_mn_show_sub1": true,
               "tt_sub_menu_cwidth1": "",
               "tt_sub_menu_ctitle1": "",
               "tt_sub_menu_clink1": "",
