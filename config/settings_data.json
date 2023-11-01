@@ -1332,7 +1332,7 @@
               "tt_mn_subheading_bg": "#febb01",
               "tt_mn_subheading_color": "#ffffff",
               "tt_mn_sub_contentwidth1": "832px",
-              "full_menu": false,
+              "full_menu": true,
               "tt_mn_show_sub1": false,
               "tt_sub_menu_cwidth1": "200px",
               "tt_sub_menu_ctitle1": "Pages",
