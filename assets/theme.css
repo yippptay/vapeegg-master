@@ -5665,6 +5665,7 @@ body.template-search.search-open .page-wrapper::after  {
 .ttresponsive_menu,  .ttresponsive_menu1  {
   display: none;
 }
+
 @media (max-width:991px) {
   .ttresponsive_menu,  .ttresponsive_menu1  {
     float:  left;
@@ -5677,6 +5678,7 @@ body.template-search.search-open .page-wrapper::after  {
     margin:  0 10px 0 0;
   }
 }
+
 @media(min-width: 992px)  {
   .ttresponsive_menu::after  {
     position:  absolute;

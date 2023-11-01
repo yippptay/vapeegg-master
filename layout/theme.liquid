@@ -235,7 +235,10 @@
       </script>  
       {% render 'quick-veiw' %}
       {% if template == 'index' %}
-      {% render 'popup-newsletter' %}
+        {% if request.design_mode %}
+        {% else %}
+        {% render 'popup-newsletter' %}
+        {% endif %}
       {% endif %}
       <a href="#" id="GotoTop" title="go to top"><span id="toTopHover"></span><i class="mdi mdi-arrow-up"></i></a>
     </div>
