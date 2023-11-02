@@ -1879,13 +1879,13 @@
           "dwld_app_url1": "",
           "dwld_app_url2": "",
           "display_footer_col1": true,
-          "footer_col_title_1": "Quick Links",
+          "footer_col_title_1": "Information",
           "col_1_menu": "",
           "display_footer_col2": true,
-          "footer_col_title_2": "Our Company",
+          "footer_col_title_2": "Support",
           "col_2_menu": "",
           "display_populer_tag": true,
-          "footer_col_title_3": "Popular Tag",
+          "footer_col_title_3": "Account Info",
           "col_3_menu": "",
           "display_security": true
         }
