@@ -1880,13 +1880,13 @@
           "dwld_app_url2": "",
           "display_footer_col1": true,
           "footer_col_title_1": "Information",
-          "col_1_menu": "",
+          "col_1_menu": "information",
           "display_footer_col2": true,
           "footer_col_title_2": "Support",
-          "col_2_menu": "",
+          "col_2_menu": "support",
           "display_populer_tag": true,
-          "footer_col_title_3": "Account Info",
-          "col_3_menu": "",
+          "footer_col_title_3": "Account",
+          "col_3_menu": "account-info",
           "display_security": true
         }
       }
