@@ -65,7 +65,7 @@
     "collections_view_enable": true,
     "collections_masonry": false,
     "enable_quick_view": true,
-    "enable_add_cart": true,
+    "enable_add_cart": false,
     "enable_wishlist": false,
     "enable_compare": false,
     "enable_quantity": false,
