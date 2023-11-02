@@ -141,7 +141,7 @@
     <div id="header-sticky" class="main-header {{ sticky_class }}">
       <div class="container">
       <div class="center-header">
-        <div class="header_logo_wrap">
+        {% comment %} <div class="header_logo_wrap">
           <div class="h1 header-logo" itemscope itemtype="http://schema.org/Organization">
             {% if section.settings.logo != blank %}
             <a href="{{ routes.root_url }}" itemprop="url">
@@ -151,23 +151,23 @@
             <a href="{{ routes.root_url }}" itemprop="url">{{ shop.name }}</a>
             {% endif %}
           </div>
-        </div>
+        </div> {% endcomment %}
         {% if section.settings.display_search %}  
-        <div class="site-header__search icon-btn col-sm-6">
+        <div class="site-header__search icon-btn col-sm-7">
           <div class="search_wrapper">
             {% render 'search-bar' %} 
           </div>
         </div> 
         {% endif %}
         <div class="right-link-icon">
-          <div class="contact">
+          {% comment %} <div class="contact">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-headphones"><path d="M3 18v-6a9 9 0 0 1 18 0v6">
               </path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
             <div class="contact-text">
               <a class="contact_no" href="tel:{{ section.settings.contact_no }}">{{ section.settings.contact_no }}</a>
               <span class="contact_detail">{{ section.settings.contact_detail }}</span>
             </div>
-          </div>
+          </div> {% endcomment %}
           {% if section.settings.display_myaccount %}
           <div class="myaccount icon-btn">
             <span class="dropdown-toggle" title="My Account" data-toggle="dropdown">              

@@ -10,12 +10,12 @@
             "image_link": "",
             "show_video": false,
             "video_url": "",
-            "title": "Lorem Ipsum",
-            "subtitle": "Lorem Ipsum",
-            "desc": "Lorem Ipsum",
-            "price_desc": "Lorem Ipsum",
-            "price": "$49.99\/-",
-            "btn_txt": "Lorem Ipsum",
+            "title": "",
+            "subtitle": "",
+            "desc": "",
+            "price_desc": "",
+            "price": "",
+            "btn_txt": "",
             "btn_link": "#",
             "title_color": "#313c46",
             "subtitle_color": "#313c46",
@@ -37,12 +37,12 @@
             "image_link": "#",
             "show_video": false,
             "video_url": "",
-            "title": "Lorem Ipsum",
-            "subtitle": "Lorem Ipsum",
-            "desc": "Lorem Ipsum",
-            "price_desc": "Lorem Ipsum",
-            "price": "$69.99\/-",
-            "btn_txt": "Lorem Ipsum",
+            "title": "",
+            "subtitle": "",
+            "desc": "",
+            "price_desc": "",
+            "price": "",
+            "btn_txt": "",
             "btn_link": "#",
             "title_color": "#313c46",
             "subtitle_color": "#313c46",
@@ -74,29 +74,15 @@
         "8f267353-dc55-49dc-821d-c9f266cb481b": {
           "type": "announcement_text",
           "settings": {
-            "announce_cnt": "Mega offers now on Amazon Fresh | Up to 40% off"
-          }
-        },
-        "e837ec78-6a3f-4caf-a9f2-ad6aedef618f": {
-          "type": "announcement_text",
-          "settings": {
-            "announce_cnt": "FREE Delivery over ₹499. Fulfilled by eGudget."
-          }
-        },
-        "4de05982-ea7a-4c26-b5a3-c679087d5553": {
-          "type": "announcement_text",
-          "settings": {
-            "announce_cnt": "Flat $10 Instant Cashback on Wallet & UPI Transaction"
+            "announce_cnt": "Welcome to Vape Egg!"
           }
         }
       },
       "block_order": [
-        "8f267353-dc55-49dc-821d-c9f266cb481b",
-        "e837ec78-6a3f-4caf-a9f2-ad6aedef618f",
-        "4de05982-ea7a-4c26-b5a3-c679087d5553"
+        "8f267353-dc55-49dc-821d-c9f266cb481b"
       ],
       "settings": {
-        "bg_clr": "#504170",
+        "bg_clr": "#111111",
         "text_clr": "#ffffff"
       }
     },
@@ -118,23 +104,23 @@
       "type": "right-banner2",
       "settings": {
         "banner_image1": "shopify:\/\/shop_images\/banner-02.jpg",
-        "banner_title1": "Echo Audio",
+        "banner_title1": "",
         "title_color1": "#313c46",
-        "banner_subtitle1": "Amazon",
+        "banner_subtitle1": "",
         "subtitle_color1": "#313c46",
-        "banner_pricedesc1": "FROM",
+        "banner_pricedesc1": "",
         "pricedesc_color1": "#313c46",
-        "banner_price1": "$32.89\/-",
+        "banner_price1": "",
         "price_color1": "#f04706",
         "text1_position": "right",
         "banner_image2": "shopify:\/\/shop_images\/banner-03.jpg",
-        "banner_title2": "Smart Watches",
+        "banner_title2": "",
         "title_color2": "#313c46",
-        "banner_subtitle2": "Samsung",
+        "banner_subtitle2": "",
         "subtitle_color2": "#313c46",
-        "banner_pricedesc2": "FROM",
+        "banner_pricedesc2": "",
         "pricedesc_color2": "#313c46",
-        "banner_price2": "$339.89\/-",
+        "banner_price2": "",
         "price_color2": "#f04706",
         "text2_position": "left"
       }
@@ -447,6 +433,7 @@
         "8175377c-2ecf-4e1a-95a5-d221eae7254a",
         "3b41b58b-7bda-4227-ae60-8758c002c34c"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -463,7 +450,7 @@
       "type": "sticky-mobile-bar",
       "settings": {
         "mobile_bar": true,
-        "url_1": "https:\/\/theme-clickshop.myshopify.com\/",
+        "url_1": "",
         "title_1": "Home",
         "url_2": "shopify:\/\/collections",
         "title_2": "Category",
