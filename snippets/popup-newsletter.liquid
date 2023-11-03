@@ -3,9 +3,9 @@
 <div class="modal fade"  id="newsletterModal" data-pause="{{ settings.popup_newsletter_delay_first }}">
   <div class="modal-dialog white-modal center-center">
     <div class="modal-content modal-md">
-      <div class="modal-header">
+      {% comment %} <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="mdi mdi-close"></i></button>
-      </div>
+      </div> {% endcomment %}
       <div class="modal-block">
           {% if settings.popup_newsletter_img != blank %}
         <div class="modal-img col-sm-6"> 
@@ -19,7 +19,7 @@
           {% form 'customer' %}
      
       {% if form.posted_successfully? %}
-    	<input type="hidden" name="contact[tags]" value="newsletter">
+    	<input type="hidden" name="contact[tags]" value="newsletter">z
     	<div class="newsletter-input row-subscibe float-start w-100 position-relative">
           <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" name="contact[email]" id="Email" class="input-group-field" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}" autocapitalize="off">
           

@@ -49,9 +49,12 @@
       <div class="container">  
         <div class="top-header-content">
           <div class="top-header">
-            <a class="track-order" href="{% if section.settings.track_link != blank %}{{ section.settings.track_link }}{% else %}#{% endif %}" title="track-order">
+            {% comment %} <a class="track-order" href="{% if section.settings.track_link != blank %}{{ section.settings.track_link }}{% else %}#{% endif %}" title="track-order">
               <i class="mdi mdi-tractor"></i>
               <div class="destination">{{ section.settings.destination }}</div>
+            </a> {% endcomment %}
+            <a class="track-order" style="color: #FFF">
+              WARNING: This product contains nicotine. Nicotine is an addictive chemical.
             </a>
             {% if section.settings.display_language %}             
             <div class="header_language">

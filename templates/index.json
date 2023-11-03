@@ -1,39 +1,30 @@
 {
   "sections": {
+    "1647842144038494b0": {
+      "type": "announcement-bar",
+      "blocks": {
+        "8f267353-dc55-49dc-821d-c9f266cb481b": {
+          "type": "announcement_text",
+          "settings": {
+            "announce_cnt": "Welcome to Vape Egg!"
+          }
+        }
+      },
+      "block_order": [
+        "8f267353-dc55-49dc-821d-c9f266cb481b"
+      ],
+      "settings": {
+        "bg_clr": "#111111",
+        "text_clr": "#ffffff"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "1580215063672-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/test.jpg",
-            "image_link": "",
-            "show_video": false,
-            "video_url": "",
-            "title": "",
-            "subtitle": "",
-            "desc": "",
-            "price_desc": "",
-            "price": "",
-            "btn_txt": "",
-            "btn_link": "#",
-            "title_color": "#313c46",
-            "subtitle_color": "#313c46",
-            "desc_color": "#ffffff",
-            "price_desccolor": "#313c46",
-            "price_color": "#dd2935",
-            "btn_bg_color": "#313c46",
-            "btn_txt_color": "#ffffff",
-            "btn_border_color": "#dd2935",
-            "btn_hovertxt_color": "#ffffff",
-            "text_position": "left",
-            "text_effect": "left"
-          }
-        },
         "1580215063672-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/test2.jpg",
+            "image": "shopify:\/\/shop_images\/vapeegg.jpg",
             "image_link": "#",
             "show_video": false,
             "video_url": "",
@@ -59,7 +50,6 @@
         }
       },
       "block_order": [
-        "1580215063672-0",
         "1580215063672-1"
       ],
       "settings": {
@@ -68,28 +58,10 @@
         "slide_button_txt_hover_color": "#dd2935"
       }
     },
-    "1647842144038494b0": {
-      "type": "announcement-bar",
-      "blocks": {
-        "8f267353-dc55-49dc-821d-c9f266cb481b": {
-          "type": "announcement_text",
-          "settings": {
-            "announce_cnt": "Welcome to Vape Egg!"
-          }
-        }
-      },
-      "block_order": [
-        "8f267353-dc55-49dc-821d-c9f266cb481b"
-      ],
-      "settings": {
-        "bg_clr": "#111111",
-        "text_clr": "#ffffff"
-      }
-    },
     "a2fd6f0b-d1e8-4d38-a0a7-28760e59f741": {
       "type": "right-banner",
       "settings": {
-        "right_banner": "shopify:\/\/shop_images\/test3.jpg",
+        "right_banner": "shopify:\/\/shop_images\/wrap.jpg",
         "title": "",
         "subtitle": "",
         "price_desc": "",
@@ -103,7 +75,7 @@
     "1647426476a26bdc71": {
       "type": "right-banner2",
       "settings": {
-        "banner_image1": "shopify:\/\/shop_images\/banner-02.jpg",
+        "banner_image1": "shopify:\/\/shop_images\/create.jpg",
         "banner_title1": "",
         "title_color1": "#313c46",
         "banner_subtitle1": "",
@@ -113,7 +85,7 @@
         "banner_price1": "",
         "price_color1": "#f04706",
         "text1_position": "right",
-        "banner_image2": "shopify:\/\/shop_images\/banner-03.jpg",
+        "banner_image2": "shopify:\/\/shop_images\/instawack.jpg",
         "banner_title2": "",
         "title_color2": "#313c46",
         "banner_subtitle2": "",
@@ -222,6 +194,7 @@
         "4014a75b-2224-4440-a730-ca0cb1c7f727",
         "3de3ef1b-95ce-446b-b166-7b8525b976a7"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "#f7f7f7",
         "category_text_color": "#313c46",
@@ -229,66 +202,6 @@
         "category_row": "1",
         "category_col": "7",
         "item_count": false
-      }
-    },
-    "our_brand": {
-      "type": "our_brand",
-      "blocks": {
-        "1605783755d6d9f598-0": {
-          "type": "brand_image",
-          "settings": {
-            "link": "#"
-          }
-        },
-        "1605783755d6d9f598-1": {
-          "type": "brand_image",
-          "settings": {
-            "link": "#"
-          }
-        },
-        "1605783755d6d9f598-2": {
-          "type": "brand_image",
-          "settings": {
-            "link": "#"
-          }
-        },
-        "1605783755d6d9f598-3": {
-          "type": "brand_image",
-          "settings": {
-            "link": "#"
-          }
-        },
-        "1605783755d6d9f598-4": {
-          "type": "brand_image",
-          "settings": {
-            "link": "#"
-          }
-        },
-        "1605783755d6d9f598-5": {
-          "type": "brand_image",
-          "settings": {
-            "link": "#"
-          }
-        },
-        "fe3f5195-5da5-4a16-b714-43fb3e5da4bd": {
-          "type": "brand_image",
-          "settings": {
-            "link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "1605783755d6d9f598-0",
-        "1605783755d6d9f598-1",
-        "1605783755d6d9f598-2",
-        "1605783755d6d9f598-3",
-        "1605783755d6d9f598-4",
-        "1605783755d6d9f598-5",
-        "fe3f5195-5da5-4a16-b714-43fb3e5da4bd"
-      ],
-      "settings": {
-        "addclass": "brands",
-        "bg_color": "#ffffff"
       }
     },
     "1650258784d34e02af": {
@@ -307,11 +220,19 @@
             "title": "Hardware",
             "collection": "hardware"
           }
+        },
+        "944372a6-c01c-4a41-aace-f761050f4ff9": {
+          "type": "text_block",
+          "settings": {
+            "title": "E-Liquid",
+            "collection": "e-liquids"
+          }
         }
       },
       "block_order": [
         "1650258784467d1b9d-0",
-        "3fb8b834-1566-4897-81c8-257fe60b07b7"
+        "3fb8b834-1566-4897-81c8-257fe60b07b7",
+        "944372a6-c01c-4a41-aace-f761050f4ff9"
       ],
       "settings": {
         "product_rows": true,
@@ -366,11 +287,103 @@
         "662403ab-dbaf-495c-aaa0-6204a7e2c762",
         "a45cb13b-35f3-48e6-8d70-0d964ca95475"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "rgba(0,0,0,0)",
         "title_color": "#222222",
         "title_hover_color": "#dd2935",
         "desc_color": "#666666"
+      }
+    },
+    "our_brand": {
+      "type": "our_brand",
+      "blocks": {
+        "1605783755d6d9f598-1": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7-daze.png",
+            "link": "#"
+          }
+        },
+        "1605783755d6d9f598-2": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/basix_b9da308b-7efd-4ecf-b056-2ea41c9c05d4.png",
+            "link": "#"
+          }
+        },
+        "1605783755d6d9f598-3": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blvk.png",
+            "link": "#"
+          }
+        },
+        "1605783755d6d9f598-4": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/candy-king.png",
+            "link": "#"
+          }
+        },
+        "1605783755d6d9f598-5": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coastal-clouds.png",
+            "link": "#"
+          }
+        },
+        "fe3f5195-5da5-4a16-b714-43fb3e5da4bd": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pod-juice.png",
+            "link": "#"
+          }
+        },
+        "4d9e8de0-2425-4000-b6a0-a3d8bcc972fd": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/twist-e-liquid.png",
+            "link": ""
+          }
+        },
+        "b647aea9-5e4e-4a94-bc3d-b3f2be837eb9": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vapetasia.png",
+            "link": ""
+          }
+        },
+        "c24e8016-f590-4c35-9335-70f021320ee0": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/smok.png",
+            "link": ""
+          }
+        },
+        "a8a21cc5-63ba-4842-b6ce-36e56e593d26": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/geekvape.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1605783755d6d9f598-1",
+        "1605783755d6d9f598-2",
+        "1605783755d6d9f598-3",
+        "1605783755d6d9f598-4",
+        "1605783755d6d9f598-5",
+        "fe3f5195-5da5-4a16-b714-43fb3e5da4bd",
+        "4d9e8de0-2425-4000-b6a0-a3d8bcc972fd",
+        "b647aea9-5e4e-4a94-bc3d-b3f2be837eb9",
+        "c24e8016-f590-4c35-9335-70f021320ee0",
+        "a8a21cc5-63ba-4842-b6ce-36e56e593d26"
+      ],
+      "settings": {
+        "addclass": "brands",
+        "bg_color": "#ffffff"
       }
     },
     "1647241500904e716d": {
@@ -439,6 +452,7 @@
     },
     "special-product": {
       "type": "special-product",
+      "disabled": true,
       "settings": {
         "Special_pro": "3",
         "class": "specialproduct",
@@ -464,14 +478,14 @@
     }
   },
   "order": [
-    "slideshow",
     "1647842144038494b0",
+    "slideshow",
     "a2fd6f0b-d1e8-4d38-a0a7-28760e59f741",
     "1647426476a26bdc71",
     "1647407950a281eb2f",
-    "our_brand",
     "1650258784d34e02af",
     "cms-services",
+    "our_brand",
     "1647241500904e716d",
     "special-product",
     "3b66bbeb-2689-4237-b209-9d05640ec453"
