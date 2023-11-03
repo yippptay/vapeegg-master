@@ -6,7 +6,7 @@
         {% for block in section.blocks %}
         {% if block.settings.banner_image1 != blank %}
         <div id="blockbanner-{{ block.id }}" class="banner col-sm-12">
-          <a href="{% if block.settings.banner_link1 != blank %} {{block.settings.banner_link1 }}{% else %}#{% endif %}">
+          <a href="{% if block.settings.banner_link1 != blank %} {{ block.settings.banner_link1 }}{% else %}#{% endif %}">
             {% if block.settings.banner_image1 != blank %}
             <img loading="lazy" src="{{  block.settings.banner_image1 | img_url: "master" }}" alt="banner-image" />
             {% endif %}

@@ -5,7 +5,7 @@ Documentation - http://docs.shopify.com/support/your-website/navigation/creating
 <div class="breadcrumb-wrap">
   <div class="container">
     {% if template contains 'product' %}
-    <span class="title">{{ product.title }}</span>
+    {% comment %} <span class="title">{{ product.title }}</span> {% endcomment %}
     <div class="breadcrumb"><a href="/" title="{{ 'general.breadcrumbs.home_link_title' | t }}"><i class="mdi mdi-home-outline"></i></a>
       {% if collection %}   
       <span aria-hidden="true" class="breadcrumb__sep">&gt;</span>
@@ -17,7 +17,7 @@ Documentation - http://docs.shopify.com/support/your-website/navigation/creating
 
     </div>
     {% elsif template contains 'collection' and collection.handle %}
-    <span class="title">{{ collection.title }}</span>
+    {% comment %} <span class="title">{{ collection.title }}</span> {% endcomment %}
     <div class="breadcrumb"> <a href="/" title="{{ 'general.breadcrumbs.home_link_title' | t }}"><i class="mdi mdi-home-outline"></i></a>
 
       <span aria-hidden="true" class="breadcrumb__sep">&gt;</span>

@@ -70,7 +70,7 @@
           <div class="row">
             {% endif %}
             {% if section.settings.product_layout != 'design_5' %}
-            <div class="col-xs-12 {% if section.settings.product_layout != 'design_2' and section.settings.product_layout != 'design_1' %}col-sm-4{% endif %} {% if section.settings.product_layout == 'design_1' %}col-sm-5 {% endif %}{% if section.settings.product_layout == 'design_2' %}col-sm-10 product-images product-images-fixed{% endif %} demo text-center product-wrapper-owlslider" data-id="{{ product.id }}" data-product-single-media-group>
+            <div class="col-xs-12 {% if section.settings.product_layout != 'design_2' and section.settings.product_layout != 'design_1' %}col-sm-4{% endif %} {% if section.settings.product_layout == 'design_1' %}col-sm-6 {% endif %}{% if section.settings.product_layout == 'design_2' %}col-sm-10 product-images product-images-fixed{% endif %} demo text-center product-wrapper-owlslider" data-id="{{ product.id }}" data-product-single-media-group>
               <div class="product-image-content">
                 {% if product.images.size == 0 %}
                 <div class="product-photo-container">
@@ -252,9 +252,9 @@
               </div>
             </div>
             {% endif %}
-            <div class="col-xs-12 {% if section.settings.product_layout == 'design_4' %}col-sm-4 {%endif %}{% if section.settings.product_layout == 'design_5' %}col-sm-5 {%endif %}{% if section.settings.product_layout == 'design_2' %}col-sm-6 {%endif %}{% if section.settings.product_layout == 'design_3' %}col-sm-8 {%endif %}{% if section.settings.product_layout == 'design_1' %}col-sm-7 {% endif %}demo product-information product_fixed_block">
+            <div class="col-xs-12 {% if section.settings.product_layout == 'design_4' %}col-sm-4 {%endif %}{% if section.settings.product_layout == 'design_5' %}col-sm-5 {%endif %}{% if section.settings.product_layout == 'design_2' %}col-sm-6 {%endif %}{% if section.settings.product_layout == 'design_3' %}col-sm-8 {%endif %}{% if section.settings.product_layout == 'design_1' %}col-sm-6 {% endif %}demo product-information product_fixed_block">
               {% if section.settings.product_layout == 'design_1' or section.settings.product_layout == 'design_3' %}
-              <div class="col-sm-8 product_fixed_block product-description">
+              <div class="col-sm-12 product_fixed_block product-description">
                 {% endif %}
                 <div data-id="product-{{ product.id }}" class="product-information-inner product-block fixed-product-block">
                   <div class="fixed-content">
@@ -602,7 +602,7 @@
                     {% endif %} 
                     {% if section.settings.product_layout == 'design_3' %}
                     <hr class="hr">                
-                    <div class="payment-content">
+                    {% comment %} <div class="payment-content">
                       <div class="payment-title">{{ section.settings.payment_title }}</div>
                       <div class="payment-subtitle">{{ section.settings.payment_subtitle }}</div>
                       {% unless shop.enabled_payment_types == empty %}
@@ -639,7 +639,7 @@
                           <div class="security-subtitle">{{ section.settings.sec_subtitle3 }}</div>
                         </div>
                       </div>
-                    </div>
+                    </div> {% endcomment %}
                     {% endif %}
                   </div>
                 </div>     
@@ -843,7 +843,7 @@
               </div> 
               {% endif %}
               {% if section.settings.product_layout == 'design_1' %}
-              <div class="col-sm-4 payment-content">
+              {% comment %} <div class="col-sm-4 payment-content">
                 <div class="security-bg">
                   <div class="payment-detail">
                     <div class="payment-title">{{ section.settings.payment_title }}</div>
@@ -890,7 +890,7 @@
                   <img src="{{ section.settings.banner_img | img_url: 'master' }}" alt="product-banner" />
                 </div>
                 {% endif %}
-              </div>   
+              </div>    {% endcomment %}
               {% endif %}
             </div> 
             {% if section.settings.product_layout == 'design_5' %}
@@ -1176,11 +1176,11 @@
           {% endif %}
         </div>
       </div>
-      <div class="product-review" href="#tab-2">
+      {% comment %} <div class="product-review" href="#tab-2">
         {% if product.metafields.spr.reviews != "" %}
         <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div> 
         {% endif %}
-      </div>    
+      </div> {% endcomment %}
       {% if section.settings.related_products_enable %}     
       {% render 'related-products', product: product %}
       {% endif %}
@@ -1213,7 +1213,7 @@
         {% if product.has_only_default_variant != true %}
         <div class="color-size">
           <div class="color">
-            {% if settings.display_color_variant %}             
+            {% if settings.display_color_variant %}
             {% render 'item-swatch' , product: product %}
             {% endif %}
           </div>

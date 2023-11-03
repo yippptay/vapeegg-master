@@ -8,10 +8,24 @@
           "settings": {
             "announce_cnt": "Welcome to Vape Egg!"
           }
+        },
+        "6f369fe5-eee0-4326-a79f-a7804b601973": {
+          "type": "announcement_text",
+          "settings": {
+            "announce_cnt": "15% off First Order (enter code \"NEWCX\")"
+          }
+        },
+        "ab83d58d-abe6-45e8-b346-c4e4c1b49408": {
+          "type": "announcement_text",
+          "settings": {
+            "announce_cnt": "Free Shipping over $100"
+          }
         }
       },
       "block_order": [
-        "8f267353-dc55-49dc-821d-c9f266cb481b"
+        "8f267353-dc55-49dc-821d-c9f266cb481b",
+        "6f369fe5-eee0-4326-a79f-a7804b601973",
+        "ab83d58d-abe6-45e8-b346-c4e4c1b49408"
       ],
       "settings": {
         "bg_clr": "#111111",
@@ -21,6 +35,33 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "5d8fcc8a-1567-4a0e-9d08-87df44c6cab1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/spaceman-10k.jpg",
+            "image_link": "",
+            "show_video": false,
+            "video_url": "",
+            "title": "",
+            "subtitle": "",
+            "desc": "",
+            "price_desc": "",
+            "price": "",
+            "btn_txt": "",
+            "btn_link": "",
+            "title_color": "#fff",
+            "subtitle_color": "#fff",
+            "desc_color": "#fff",
+            "price_desccolor": "#fff",
+            "price_color": "#fff",
+            "btn_bg_color": "#EB3039",
+            "btn_txt_color": "#fff",
+            "btn_border_color": "#fff",
+            "btn_hovertxt_color": "#fff",
+            "text_position": "left",
+            "text_effect": "left"
+          }
+        },
         "1580215063672-1": {
           "type": "image",
           "settings": {
@@ -44,12 +85,13 @@
             "btn_txt_color": "#ffffff",
             "btn_border_color": "#dd2935",
             "btn_hovertxt_color": "#ffffff",
-            "text_position": "right",
+            "text_position": "left",
             "text_effect": "left"
           }
         }
       },
       "block_order": [
+        "5d8fcc8a-1567-4a0e-9d08-87df44c6cab1",
         "1580215063672-1"
       ],
       "settings": {

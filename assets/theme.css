@@ -4416,7 +4416,7 @@ h3.tt-pagesubtitle  {
   font:  500 16px/18px var(--font-stack-header);
     }
 .breadcrumb-wrap .breadcrumb  {
-  float:  right;
+  float:  left;
   width:  auto;
 }
 .breadcrumb-wrap .breadcrumb .breadcrumb__sep  {
