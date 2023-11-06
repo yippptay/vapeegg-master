@@ -3936,7 +3936,7 @@ button.btn.text-cart{
   flex-grow:  0;
   z-index:  1;
 }
-.site-header__search.icon-btn .search_wrapper .collections-selector::after  {
+.site-header__search.icon-btn .search_wrapper .collections-selector::after, .myaccount::after  {
   content:  '';
   position:  absolute;
   background:  #dedede;
@@ -5584,12 +5584,13 @@ body.template-search.search-open .page-wrapper::after  {
     text-align:  left;
     }
 .right-link-icon .myaccount  {
-  float:  none;
-  width:  auto;
-  display:  inline-block;
-  vertical-align:  top;
-  margin-right:  30px;
-  flex-grow:  0;
+  float: none;
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  padding-right: 30px;
+  flex-grow: 0;
 }
 .right-link-icon .myaccount svg  {
   width:  35px;
