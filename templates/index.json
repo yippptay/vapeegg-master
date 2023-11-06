@@ -12,7 +12,7 @@
         "6f369fe5-eee0-4326-a79f-a7804b601973": {
           "type": "announcement_text",
           "settings": {
-            "announce_cnt": "15% off First Order (enter code \"NEWCX\")"
+            "announce_cnt": "15% off First Order (Enter Code \"NEWCX\")"
           }
         },
         "ab83d58d-abe6-45e8-b346-c4e4c1b49408": {
@@ -49,15 +49,15 @@
             "price": "",
             "btn_txt": "",
             "btn_link": "",
-            "title_color": "#fff",
-            "subtitle_color": "#fff",
-            "desc_color": "#fff",
-            "price_desccolor": "#fff",
-            "price_color": "#fff",
-            "btn_bg_color": "#EB3039",
-            "btn_txt_color": "#fff",
-            "btn_border_color": "#fff",
-            "btn_hovertxt_color": "#fff",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffff",
+            "desc_color": "#ffffff",
+            "price_desccolor": "#ffffff",
+            "price_color": "#ffffff",
+            "btn_bg_color": "#eb3039",
+            "btn_txt_color": "#ffffff",
+            "btn_border_color": "#ffffff",
+            "btn_hovertxt_color": "#ffffff",
             "text_position": "left",
             "text_effect": "left"
           }
@@ -344,49 +344,49 @@
           "type": "brand_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/7-daze.png",
-            "link": "#"
+            "link": "https:\/\/vapeegg.com\/collections\/7daze"
           }
         },
         "1605783755d6d9f598-2": {
           "type": "brand_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/basix_b9da308b-7efd-4ecf-b056-2ea41c9c05d4.png",
-            "link": "#"
+            "link": "https:\/\/vapeegg.com\/collections\/basix"
           }
         },
         "1605783755d6d9f598-3": {
           "type": "brand_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/blvk.png",
-            "link": "#"
+            "link": "https:\/\/vapeegg.com\/collections\/blvk"
           }
         },
         "1605783755d6d9f598-4": {
           "type": "brand_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/candy-king.png",
-            "link": "#"
+            "link": "https:\/\/vapeegg.com\/collections\/candy-king"
           }
         },
         "1605783755d6d9f598-5": {
           "type": "brand_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/coastal-clouds.png",
-            "link": "#"
+            "link": "https:\/\/vapeegg.com\/collections\/coastal-clouds"
           }
         },
         "fe3f5195-5da5-4a16-b714-43fb3e5da4bd": {
           "type": "brand_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/pod-juice.png",
-            "link": "#"
+            "link": "https:\/\/vapeegg.com\/collections\/pod-juice"
           }
         },
         "4d9e8de0-2425-4000-b6a0-a3d8bcc972fd": {
           "type": "brand_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/twist-e-liquid.png",
-            "link": ""
+            "link": "https:\/\/vapeegg.com\/collections\/twist-e-liquids"
           }
         },
         "b647aea9-5e4e-4a94-bc3d-b3f2be837eb9": {

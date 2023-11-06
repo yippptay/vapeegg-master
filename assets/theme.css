@@ -11719,6 +11719,7 @@ ul#promo-carousel  {
   text-align: center;
 }
 #brands_list_slider .brand-bar__image {
+  max-height: 150px;
   opacity: 0.7;
   -moz-opacity: 0.7;
   -khtml-opacity: 0.7;
