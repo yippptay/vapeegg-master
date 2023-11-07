@@ -1852,6 +1852,7 @@ h5.tt-toggle-accordion.active:before,  h5.tt-toggle.active:before  {
 .related-products.product-grid  {
   text-align:  center;
   border:  1px solid var(--color-border);
+  border-radius: 5px;
     }
 @media only screen and (max-width: 991px)  {
   .page-wrapper .main-content  {
@@ -3936,7 +3937,7 @@ button.btn.text-cart{
   flex-grow:  0;
   z-index:  1;
 }
-.site-header__search.icon-btn .search_wrapper .collections-selector::after  {
+.site-header__search.icon-btn .search_wrapper .collections-selector::after, .myaccount::after  {
   content:  '';
   position:  absolute;
   background:  #dedede;
@@ -5384,8 +5385,7 @@ body.template-search.search-open .page-wrapper::after  {
     content: "\f142";
   }
   .tthorizontal_menu #tt-megamenu1 .tt-mega_menu1 li.tt_menu_item.more_menu .tt_sub_menu_wrap {
-    left: auto;
-    right: 100%;
+    left: 100%;
     top: 0;
     bottom: auto;
     padding: 10px 0;
@@ -5584,12 +5584,13 @@ body.template-search.search-open .page-wrapper::after  {
     text-align:  left;
     }
 .right-link-icon .myaccount  {
-  float:  none;
-  width:  auto;
-  display:  inline-block;
-  vertical-align:  top;
-  margin-right:  30px;
-  flex-grow:  0;
+  float: none;
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  padding-right: 30px;
+  flex-grow: 0;
 }
 .right-link-icon .myaccount svg  {
   width:  35px;
@@ -6082,7 +6083,7 @@ body.template-search.search-open .page-wrapper::after  {
   .header_1 .site-header__search.icon-btn  {
     margin:  15px 0 0;
     float:  left;
-    width:  100%;
+    width:  70%;
     padding:  0px;
   }
   .header_1_wrapper .header_logo_wrap  {
@@ -7832,6 +7833,7 @@ ul.no-bullets.top-products.owl-carousel.owl-loaded.owl-drag  {
   height:  30px;
   float:  left;
   color:  #333;
+  border-radius:  5px;
 }
 .product-single__photos a.product-lightbox-btn:hover  {
   color:  #111;
@@ -11016,6 +11018,7 @@ ul#promo-carousel  {
   position:  relative;
   width:  945px;
   padding:  30px 15px;
+  border-radius: 5px;
 }
 .quick-view .quick-shop-modal-bg  {
   background:  #fff;
@@ -12029,6 +12032,7 @@ a.spr-icon.spr-icon-star.spr-icon-star-empty.spr-icon-star-hover  {
   position:  relative;
   overflow:  hidden;
   border:  2px solid var(--color-border);
+  border-radius:  5px;
     }
 .qty-box-set .quantity,  .qty-box-set .quantity1  {
   border:  none;
@@ -12248,6 +12252,7 @@ input[type=number]::-webkit-inner-spin-button,  input[type=number]::-webkit-oute
   text-align:  center;
   padding:  30px;
   border:  1px solid var(--color-border);
+  border-radius:  5px;
     }
 .product-single__description .product_tab_wrapper ul.tabs  {
   border-bottom:  1px solid var(--color-border);
@@ -13479,6 +13484,7 @@ body .compare-model .max_compare  {
   float:  left;
   width:  100%;
   border:  1px solid var(--color-border);
+  border-radius:  5px;
     }
 .hover_style3 #recently-viewed-products .owl-stage-outer  {
   margin:  0 0 -15px;
@@ -16612,6 +16618,7 @@ body .compare-model .modal .modal-dialog .modal-content .close::after,  body .co
 }
 .template-cart .table-responsive  {
   border:  1px solid var(--color-border);
+  border-radius:  5px;
     float:  left;
     width:  100%;
     border-bottom:  none;
@@ -16695,7 +16702,7 @@ body .compare-model .modal .modal-dialog .modal-content .close::after,  body .co
       border-bottom:  1px solid var(--color-border);
         }
 .cart__remove i.mdi.mdi-delete  {
-  font-size:  18px;
+  font-size:  24px;
   transition:  all 400ms ease-in-out 0s;
   -webkit-transition:  all 400ms ease-in-out 0s;
   -moz-transition:  all 400ms ease-in-out 0s;
@@ -16774,6 +16781,7 @@ h1.cart-header__title  {
   width:  100%;
   padding:  30px;
   border:  1px solid var(--color-border);
+  border-radius:  5px;
     }
 cart-note.cart__note.field  {
   float:  left;
@@ -16781,6 +16789,7 @@ cart-note.cart__note.field  {
   padding:  30px;
   margin:  0 0 15px;
   border:  1px solid var(--color-border);
+  border-radius:  5px;
     }
 .cart__image,  .cart__image img  {
   display:  block;
@@ -16839,6 +16848,7 @@ cart-note.cart__note.field  {
   width:  100%;
   padding:  30px;
   border:  1px solid var(--color-border);
+  border-radius:  5px;
     margin:  15px 0 0;
     }
 .cart-policy .policy .policy-icon  {
@@ -16878,6 +16888,7 @@ cart-note.cart__note.field label  {
 }
 cart-note.cart__note.field textarea  {
   margin:  0px;
+  border-radius:  5px;
 }
 @media only screen and (min-width: 1025px)  {
   .cart__remove  {
@@ -21393,6 +21404,7 @@ span.icon__fallback-text  {
 .design_1 .product-single__photos  {
   margin-bottom:  20px;
   border:  1px solid var(--color-border);
+  border-radius:  5px;
     }
 .design_1 .product-block .title-arrows  {
   float:  left;

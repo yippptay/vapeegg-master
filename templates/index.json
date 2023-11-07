@@ -501,22 +501,6 @@
         "title": "Deals of the Day",
         "collection": "e-liquids"
       }
-    },
-    "3b66bbeb-2689-4237-b209-9d05640ec453": {
-      "type": "sticky-mobile-bar",
-      "settings": {
-        "mobile_bar": true,
-        "url_1": "",
-        "title_1": "Home",
-        "url_2": "shopify:\/\/collections",
-        "title_2": "Category",
-        "url_3": "https:\/\/theme-clickshop.myshopify.com\/cart",
-        "title_3": "Cart",
-        "url_4": "https:\/\/theme-clickshop.myshopify.com\/account\/login",
-        "title_4": "Account",
-        "url_5": "shopify:\/\/pages\/wishlist",
-        "title_5": "Wishlist"
-      }
     }
   },
   "order": [
@@ -529,7 +513,6 @@
     "cms-services",
     "our_brand",
     "1647241500904e716d",
-    "special-product",
-    "3b66bbeb-2689-4237-b209-9d05640ec453"
+    "special-product"
   ]
 }

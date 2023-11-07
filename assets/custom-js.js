@@ -1145,7 +1145,7 @@ $(window).scroll(function(){
       e.stopPropagation();
     }
     else {
-      document.getElementById("header-sticky").style.top = "-100px";
+      document.getElementById("header-sticky").style.top = "-130px";
     }
     prevScrollpos = currentScrollPos;
   }

@@ -4,6 +4,9 @@
   {%- assign image_size = '270x270' -%}
   {%- assign product_limit = 16 -%}  
   <div class="container">
+    <div class="section-header section-header--small aos-init" style="float: none;" data-aos="fade-up">
+      <h2 class="tt-title">Shop By Category</h2>  
+    </div>
     <div class="grid__item" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %}>           
       {% if section.blocks.size > 1 %}
       <ul id="tab_product_{{ section.id }}" class="nav nav-tabs">            

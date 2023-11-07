@@ -53,9 +53,6 @@
               <i class="mdi mdi-tractor"></i>
               <div class="destination">{{ section.settings.destination }}</div>
             </a> {% endcomment %}
-            <a class="track-order" style="color: #FFF">
-              WARNING: This product contains nicotine. Nicotine is an addictive chemical.
-            </a>
             {% if section.settings.display_language %}             
             <div class="header_language">
               <span class="language">{{ 'general.language.label' | t }}</span>
@@ -142,6 +139,9 @@
       </div>
     </div>
     <div id="header-sticky" class="main-header {{ sticky_class }}">
+      <div style="color: #FFF; background: #000; padding: 15px;">
+        WARNING: This product contains nicotine. Nicotine is an addictive chemical.
+      </div>
       <div class="container">
       <div class="center-header">
         {% comment %} <div class="header_logo_wrap">

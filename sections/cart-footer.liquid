@@ -34,12 +34,6 @@
         <p class="tax-note caption-large rte">{{ 'cart.general.taxes_extra' | t }}</p>
       </div>
       {%- else -%}
-        <p style="float: none; clear: both; margin: 10px 0 0;" class="cart_condition">
-  <input style="float:none; vertical-align: middle;" type="checkbox" id="agree" />
-  <label style="display:inline; float:none" for="agree">
-    I agree with the <a href="/pages/terms-condition">terms and conditions</a>.
-  </label>
-</p>
       <div class="cart__ctas" {{ block.shopify_attributes }}>
         <noscript>
           <button type="submit" class="cart__update-button button button--secondary" form="cart">
@@ -52,6 +46,13 @@
         </button>
       </div>
 
+      <p style="float: none; clear: both; margin: 10px 0 0;" class="cart_condition">
+        <input style="float:none; vertical-align: middle;" type="checkbox" id="agree" />
+        <label style="display:inline; float:none" for="agree">
+          I agree with the <a href="/pages/terms-condition">terms and conditions</a>.
+        </label>
+      </p>
+
       {%- if additional_checkout_buttons -%}
       <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
         {{ content_for_additional_checkout_buttons }}
@@ -63,7 +64,7 @@
       <div id="cart-errors"></div>
     </div>
   </div>
-  <div class="cart-policy">
+  {% comment %} <div class="cart-policy">
     {% if section.blocks.size > 0 %} 
     {% for block in section.blocks %}   
     {% if block.type == 's_text' %}
@@ -83,7 +84,7 @@
     {% endif %}
     {% endfor %}
     {% endif %}
-  </div>
+  </div> {% endcomment %}
 </div>
 <script>
  $(document).ready(function() {

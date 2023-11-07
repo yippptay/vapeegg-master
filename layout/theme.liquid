@@ -97,7 +97,6 @@
     </script>
   </head>
   <body id="{{ page_title | handle }}" class="{{ settings.toggle_menu_position }}  footer_style_2  hover_style2 {% if settings.display_toogle_menu == false %}menu-content{% endif %} {% if shop.locale == 'ar' or shop.locale == 'he' or shop.locale == 'ur' %}rtl {% endif %}{{ settings.header_icon_color }} {{ page_title | handle }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if settings.display_toogle_menu  == false %} left-menu{% else %} toggle-menu{% endif %}">
-{% include 'agechecker' %}
     {% render 'modal-box' %}
     <div class="quick-view"></div> 
     <div class="compare-model">
@@ -236,10 +235,7 @@
       </script>  
       {% render 'quick-veiw' %}
       {% if template == 'index' %}
-        {% if request.design_mode %}
-        {% else %}
-        {% render 'popup-newsletter' %}
-        {% endif %}
+      {% render 'popup-newsletter' %}
       {% endif %}
       <a href="#" id="GotoTop" title="go to top"><span id="toTopHover"></span><i class="mdi mdi-arrow-up"></i></a>
     </div>

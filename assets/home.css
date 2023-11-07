@@ -740,7 +740,7 @@
 }
 @media(max-width: 480px)  {
   .right-banner  {
-    width:  auto;
+    width:  49%;
     padding: 0 10px;
         margin: 0 0 15px;
   }
@@ -896,7 +896,7 @@
   }
   .cmsrightbanner{
     text-align: center;
-    width: auto;
+    width: 49%;
   }
 }
 /*---------------------------------end-----------------------------*/
