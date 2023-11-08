@@ -144,19 +144,19 @@
       </div>
       <div class="container">
       <div class="center-header">
-        {% comment %} <div class="header_logo_wrap">
+        <div class="header_logo_wrap">
           <div class="h1 header-logo" itemscope itemtype="http://schema.org/Organization">
             {% if section.settings.logo != blank %}
             <a href="{{ routes.root_url }}" itemprop="url">
-              <img loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ shop.name }}" title="{{ shop.name }}" itemprop="logo">
+              <img loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ shop.name }}" title="{{ shop.name }}" itemprop="logo" width="235px" height="50px">
             </a>
             {% else %}
             <a href="{{ routes.root_url }}" itemprop="url">{{ shop.name }}</a>
             {% endif %}
           </div>
-        </div> {% endcomment %}
-        {% if section.settings.display_search %}  
-        <div class="site-header__search icon-btn col-sm-7">
+        </div>
+        {% if section.settings.display_search %}
+        <div class="site-header__search icon-btn col-sm-6">
           <div class="search_wrapper">
             {% render 'search-bar' %} 
           </div>

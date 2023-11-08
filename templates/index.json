@@ -12,7 +12,7 @@
         "6f369fe5-eee0-4326-a79f-a7804b601973": {
           "type": "announcement_text",
           "settings": {
-            "announce_cnt": "15% off First Order (Enter Code \"NEWCX\")"
+            "announce_cnt": "15% off First Order (Use code \"NEWCX\" at checkout)"
           }
         },
         "ab83d58d-abe6-45e8-b346-c4e4c1b49408": {
@@ -256,25 +256,25 @@
             "collection": "disposables"
           }
         },
-        "3fb8b834-1566-4897-81c8-257fe60b07b7": {
-          "type": "text_block",
-          "settings": {
-            "title": "Hardware",
-            "collection": "hardware"
-          }
-        },
         "944372a6-c01c-4a41-aace-f761050f4ff9": {
           "type": "text_block",
           "settings": {
             "title": "E-Liquid",
             "collection": "e-liquids"
           }
+        },
+        "3fb8b834-1566-4897-81c8-257fe60b07b7": {
+          "type": "text_block",
+          "settings": {
+            "title": "Hardware",
+            "collection": "hardware"
+          }
         }
       },
       "block_order": [
         "1650258784467d1b9d-0",
-        "3fb8b834-1566-4897-81c8-257fe60b07b7",
-        "944372a6-c01c-4a41-aace-f761050f4ff9"
+        "944372a6-c01c-4a41-aace-f761050f4ff9",
+        "3fb8b834-1566-4897-81c8-257fe60b07b7"
       ],
       "settings": {
         "product_rows": true,
