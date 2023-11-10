@@ -6,66 +6,109 @@ Your theme's settings determine to use the 'default' or 'theme' customer templat
 More info:
 - http://www.tetchi.ca/shopify-theme-from-scratch-part-11/
 {% endcomment %}
+
 <div class="grid">
   <div class="container"> 
     <div class="row">
-    <div class="register col-sm-12 text-center">
-      <div class="register-page">
-      <h1 class="tt-innerpagetitle">{{ 'customer.register.title' | t }}</h1>
+      <div class="register col-sm-12 text-center">
+        <div class="register-page">
+          <h1 class="tt-innerpagetitle">{{ 'customer.register.title' | t }}</h1>
 
-      {% comment %}
-      This form must use 'create_customer'
-      {% endcomment %}
-      {% form 'create_customer' %}
+          {% comment %}
+          This form must use 'create_customer'
+          {% endcomment %}
 
-      {{ form.errors | default_errors }}
+          {% form 'create_customer' %}
 
-      <label for="first_name" class="form-label--hidden">
-        {{ 'customer.register.first_name' | t }}
-        <span>
-          *
-        </span>
-      </label>
-      <input type="text" name="customer[first_name]" id="first_name" required="required" placeholder="{{ 'customer.register.first_name' | t }}" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus>
+            {{ form.errors | default_errors }}
 
-      <label for="last_name" class="form-label--hidden">
-        {{ 'customer.register.last_name' | t }}
-        <span>
-          *
-        </span>
-      </label>
-      <input type="text" name="customer[last_name]" id="last_name" required="required" placeholder="{{ 'customer.register.last_name' | t }}" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words">
+            <label for="first_name" class="form-label--hidden">
+              {{ 'customer.register.first_name' | t }}
+              <span>
+                *
+              </span>
+            </label>
+            <input type="text" name="customer[first_name]" id="first_name" required="required" placeholder="{{ 'customer.register.first_name' | t }}" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus>
 
-      <label for="email" class="form-label--hidden">
-        {{ 'customer.register.email' | t }}
-        <span>
-          *
-        </span>
-      </label>
-      <input type="email" name="customer[email]" id="email" required="required" placeholder="{{ 'customer.register.email' | t }}" {% if form.errors contains "email" %} class="error"{% elsif form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off">
+            <label for="last_name" class="form-label--hidden">
+              {{ 'customer.register.last_name' | t }}
+              <span>
+                *
+              </span>
+            </label>
+            <input type="text" name="customer[last_name]" id="last_name" required="required" placeholder="{{ 'customer.register.last_name' | t }}" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words">
 
-      <label for="password" class="form-label--hidden">
-        {{ 'customer.register.password' | t }}
-        <span>
-          *
-        </span>
-      </label>
-      <input type="password" name="customer[password]" id="create_password" required="required" placeholder="{{ 'customer.register.password' | t }}" {% if form.errors contains "password" %} class="error"{% endif %}>
+            <label for="email" class="form-label--hidden">
+              {{ 'customer.register.email' | t }}
+              <span>
+                *
+              </span>
+            </label>
+            <input type="email" name="customer[email]" id="email" required="required" placeholder="{{ 'customer.register.email' | t }}" {% if form.errors contains "email" %} class="error"{% elsif form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off">
 
-      <div class="text-center">
-        <p>
-          <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn">
-        </p>
-        <a href="{{ shop.url }}"><i class="mdi mdi-chevron-left"></i> {{ 'customer.register.cancel' | t }}</a>
-      </div>
-      {% endform %}
+            <label for="password" class="form-label--hidden">
+              {{ 'customer.register.password' | t }}
+              <span>
+                *
+              </span>
+            </label>
+            <input type="password" name="customer[password]" id="create_password" required="required" placeholder="{{ 'customer.register.password' | t }}" {% if form.errors contains "password" %} class="error"{% endif %}>
+
+            <div style="display: flex; margin: 36px 0; align-items: flex-start;">
+              <input type="checkbox" name="terms1" id="terms1" onchange="activateButton(this)">
+              <label for="terms1" style="margin: 0px 0px 0px 5px;">I agree to the Terms and Conditions and Privacy Policy.</label>
+            </div>
+
+            <div style="display: flex; margin: 36px 0; align-items: flex-start;">
+              <input type="checkbox" name="terms2" id="terms2" onchange="activateButton(this)">
+              <label for="terms2" style="margin: 0px 0px 0px 5px;">I certify that I am a tobacco/vapor consumer 21 years of age or older and want to receive premiums, offers, coupons, and information from VapeEgg and/or their affiliates.</label>
+            </div>
+
+            <div class="text-center">
+              <p>
+                <input id="create_account_submit" type="submit" value="{{ 'customer.register.submit' | t }}" class="btn" disabled>
+              </p>
+              <a href="{{ shop.url }}"><i class="mdi mdi-chevron-left"></i> {{ 'customer.register.cancel' | t }}</a>
+            </div>
+
+            <div class="text-center" style="margin-top: 30px;">
+              <a>
+                Age will be verified at checkout
+              </a>
+            </div>
+            
+          {% endform %}
+        </div>
       </div>
     </div>
-    
-    </div></div>
+  </div>
 </div>
-<script>function showRecoverPasswordForm(){document.getElementById('recover_password').style.display='block';document.getElementById('customer_login').style.display='none'}
-function hideRecoverPasswordForm(){document.getElementById('recover_password').style.display='none';document.getElementById('customer_login').style.display='block'}
-if(window.location.hash=='#recover'){showRecoverPasswordForm()}
-{%if reset_success%}
-document.getElementById('resetSuccess').style.display='block';{%endif%}</script>
+
+<script>
+
+  function activateButton(element) {
+    if (document.getElementById('terms2').checked && document.getElementById('terms1').checked) {
+      document.getElementById("create_account_submit").disabled = false;
+     }
+     else  {
+      document.getElementById("create_account_submit").disabled = true;
+    }
+  }
+
+  function showRecoverPasswordForm() {
+    document.getElementById('recover_password').style.display='block';
+    document.getElementById('customer_login').style.display='none'
+  }
+
+  function hideRecoverPasswordForm() {
+    document.getElementById('recover_password').style.display='none';
+    document.getElementById('customer_login').style.display='block'
+  }
+
+  if(window.location.hash=='#recover') {
+    showRecoverPasswordForm();
+  }
+  {% if reset_success %}
+    document.getElementById('resetSuccess').style.display='block';
+  {% endif %}
+</script>

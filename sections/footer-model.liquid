@@ -19,7 +19,7 @@
     color: {{ section.settings.btn_hovertxt_color }};
   }
   #shopify-section-footer-model .Newsletter-content{background: {{ section.settings.newsletter_bg }};}
-  #shopify-section-footer-model .Newsletter-content .widget-title{color: {{ section.settings.newsletter_title_color }};}
+  #shopify-section-footer-model .Newsletter-content .widget-title{color: {{ section.settings.newsletter_title_color }}; display: flex; flex-direction: column; justify-content: center;}
   #shopify-section-footer-model .Newsletter-content .news-desc{color: {{ section.settings.newsletter_desc_color }};}
 </style>
 {% capture borderWidth %}{{ settings.border_width }}px{% endcapture %}
@@ -38,7 +38,12 @@
           <div class="Newsletter-content">
             <div class="container">
               <div class="block_newsletter footer-column">
-                <h5 class="widget-title">{{ section.settings.newsletter_title }}</h5>
+                <h5 class="widget-title">{{ section.settings.newsletter_title }}
+                <br />
+                <a>
+                  Keep up with special offers and what's to come
+                </a>
+               </h5>
                 <div class="news-desc">{{ section.settings.newsletter_desc }}</div>
                 <div class="newsletter-bottom-cotent">
                   {% render 'newsletter-form' %}

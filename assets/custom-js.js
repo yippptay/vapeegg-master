@@ -39,13 +39,13 @@ $(document).ready(function() {
     jQuery(".cart-footer-actions .cart-note").on("click", function(event) {    
     jQuery('.mini-cart-footer .note-detail').addClass('open');
   });
-  jQuery(".fixed-cart-wrap,.note-detail .text-cancle,.note-detail .text-save").click(function() {
+  jQuery(".fixed-cart-wrap,.note-detail .text-cancel,.note-detail .text-save").click(function() {
     jQuery('.mini-cart-footer .note-detail').removeClass('open');
   });
   jQuery(".cart-footer-actions .coupen-code").on("click", function(event) {    
     jQuery('.mini-cart-footer .discount-code').addClass('open');
   });
-  jQuery(".fixed-cart-wrap,.discount-code .text-cancle,.discount-code .text-save").click(function() {
+  jQuery(".fixed-cart-wrap,.discount-code .text-cancel,.discount-code .text-save").click(function() {
     jQuery('.mini-cart-footer .discount-code').removeClass('open');
   });
   /*-------------------- Filter toggle ------------------*/

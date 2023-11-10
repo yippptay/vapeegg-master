@@ -70,8 +70,8 @@
           <div class="row">
             {% endif %}
             {% if section.settings.product_layout != 'design_5' %}
-            <div class="col-xs-12 {% if section.settings.product_layout != 'design_2' and section.settings.product_layout != 'design_1' %}col-sm-4{% endif %} {% if section.settings.product_layout == 'design_1' %}col-sm-6 {% endif %}{% if section.settings.product_layout == 'design_2' %}col-sm-10 product-images product-images-fixed{% endif %} demo text-center product-wrapper-owlslider" data-id="{{ product.id }}" data-product-single-media-group>
-              <div class="product-image-content">
+            <div class="col-xs-12 {% if section.settings.product_layout != 'design_2' and section.settings.product_layout != 'design_1' %}col-sm-4{% endif %} {% if section.settings.product_layout == 'design_1' %}col-sm-5 {% endif %}{% if section.settings.product_layout == 'design_2' %}col-sm-10 product-images product-images-fixed{% endif %} demo text-center product-wrapper-owlslider" data-id="{{ product.id }}" data-product-single-media-group>
+              <div class="product-image-content" style="margin-bottom: 30px;">
                 {% if product.images.size == 0 %}
                 <div class="product-photo-container">
                   <img loading="lazy" src="{{ '' | product_img_url: 'grande' }}">
@@ -252,11 +252,11 @@
               </div>
             </div>
             {% endif %}
-            <div class="col-xs-12 {% if section.settings.product_layout == 'design_4' %}col-sm-4 {%endif %}{% if section.settings.product_layout == 'design_5' %}col-sm-5 {%endif %}{% if section.settings.product_layout == 'design_2' %}col-sm-6 {%endif %}{% if section.settings.product_layout == 'design_3' %}col-sm-8 {%endif %}{% if section.settings.product_layout == 'design_1' %}col-sm-6 {% endif %}demo product-information product_fixed_block">
+            <div class="col-xs-12 {% if section.settings.product_layout == 'design_4' %}col-sm-4 {%endif %}{% if section.settings.product_layout == 'design_5' %}col-sm-5 {%endif %}{% if section.settings.product_layout == 'design_2' %}col-sm-6 {%endif %}{% if section.settings.product_layout == 'design_3' %}col-sm-8 {%endif %}{% if section.settings.product_layout == 'design_1' %}col-sm-7 {% endif %}demo product-information product_fixed_block">
               {% if section.settings.product_layout == 'design_1' or section.settings.product_layout == 'design_3' %}
               <div class="col-sm-12 product_fixed_block product-description">
                 {% endif %}
-                <div data-id="product-{{ product.id }}" class="product-information-inner product-block fixed-product-block">
+                <div data-id="product-{{ product.id }}" class="product-information-inner product-block fixed-product-block" style="margin-bottom: 60px;">
                   <div class="fixed-content">
                     <div class="product-single__header col-xs-12">
                       <div class="title-arrows">
@@ -642,9 +642,92 @@
                     </div> {% endcomment %}
                     {% endif %}
                   </div>
-                </div>     
+                </div>
+
+                <h1 class="product-single__title text-capitalize">
+                  Description
+                </h1>
+
+                <hr class="hr" />
+
+                <div class="col-xs-12"> {% comment %} PRODUCT PAGE DESCRIPTION {% endcomment %}
+
+                  <div>
+                    <div style="margin-bottom: 60px;">
+                      {% if product.description != blank %}
+                        {{ product.description }}
+                      {% endif %}
+                    </div>
+                    {% if section.settings.shipping_tab_enable %}
+                      {% comment %}
+                        <div id="tab-3" class="tab-pane fade">
+                          {{ pages.shipping.content }}
+                        </div> {% endcomment %}
+                      </div>
+                    {% endif %}
+                  
+                  </div>
+                  
                 {% if section.settings.product_layout == 'design_1' or section.settings.product_layout == 'design_3' %}
+                  
               </div>
+
+              <h1 class="product-single__title text-capitalize">
+                Specifications
+              </h1>
+
+              <hr class="hr" />
+
+              <div class="col-xs-12">
+
+                <div class="product-info" style="margin-bottom: 60px;">
+
+                  {% if product.metafields.custom.brand %}
+                    <p>
+                      <label>Brand :</label>
+                      <span>{{ product.metafields.custom.brand }}</span>
+                    </p>
+                  {% endif %}
+
+                  {% if product.metafields.custom.battery %}
+                    <p>
+                      <label>Battery :</label>
+                      <span>{{ product.metafields.custom.battery }}</span>
+                    </p>
+                  {% endif %}
+
+                  {% if product.metafields.custom.capacity %}
+                    <p>
+                      <label>Capacity :</label>
+                      <span>{{ product.metafields.custom.capacity }}</span>
+                    </p>
+                  {% endif %}
+
+                  {% if product.metafields.custom.nicotine_content %}
+                    <p>
+                      <label>Nicotine Content :</label>
+                      <span>{{ product.metafields.custom.nicotine_content }}</span>
+                    </p>
+                  {% endif %}
+
+                  {% if product.metafields.custom.power %}
+                    <p>
+                      <label>Power :</label>
+                      <span>{{ product.metafields.custom.power }}</span>
+                    </p>
+                  {% endif %}
+
+                  {% if product.metafields.custom.puff_count %}
+                    <p>
+                      <label>Puff Count :</label>
+                      <span>{{ product.metafields.custom.puff_count }}</span>
+                    </p>
+                  {% endif %}
+
+                </div>
+
+              </div>
+
               {% endif %}
               {% if section.settings.product_layout == 'design_3' %}
               <div class="col-sm-4 product-additional">
@@ -1158,24 +1241,6 @@
     {% if section.settings.product_layout == 'design_2' %}
     <div class="container">
       {% endif %}
-      <div class="product-single__description rte demo">
-        <div class="product_tab_wrapper col-xs-12">
-          <ul class="tabs nav nav-tabs">
-            <li class="active"><a data-toggle="tab"  href="#tab-1">{{ 'products.product.description' | t }}</a></li>
-            {% if section.settings.shipping_tab_enable %}
-            <li><a data-toggle="tab"  href="#tab-3">{{ 'products.product.shipping_return' | t }}</a></li>
-            {% endif %}
-          </ul>          
-          <div class="tab-container">
-            <div id="tab-1"  class="tab-pane fade in active">{% if product.description != blank %} {{ product.description }} {% endif %}</div>
-            {% if section.settings.shipping_tab_enable %}
-            <div id="tab-3"  class="tab-pane fade">
-              {{ pages.shipping.content }}
-            </div>
-          </div>
-          {% endif %}
-        </div>
-      </div>
       {% comment %} <div class="product-review" href="#tab-2">
         {% if product.metafields.spr.reviews != "" %}
         <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div> 
