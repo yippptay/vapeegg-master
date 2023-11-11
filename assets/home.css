@@ -221,7 +221,7 @@
   background:  rgba(0,  0,  0,  0.9);
   height:  100%;
 }
-.homeslider .popup_overlay .popup_close{
+.homeslider .popup_overlay .popup_close {
   font-size: 30px;
   top: 70px;
   right: 30px;
@@ -247,13 +247,22 @@
   text-align:  center;
   left:  0;
   right:  0;
+  opacity: 0.5;
+  transition:  all .250s ease-in-out 0s;
+  -webkit-transition:  all .250s ease-in-out 0s;
+  -moz-transition:  all .250s ease-in-out 0s;
+  -o-transition:  all .250s ease-in-out 0s;
+  -ms-transition:  all .250s ease-in-out 0s;
+}
+.homeslider .slides ul.slick-dots:hover {
+  opacity: 1;
 }
 .homeslider .slides ul.slick-dots li  {
   float:  none;
   display:  inline-block;
   vertical-align:  middle;
   width:  auto;
-  margin:  0 3px;
+  margin:  0 4px;
   line-height:  14px;
 }
 .homeslider ul.slides.slick-slider .slick-dots li button  {
@@ -262,8 +271,8 @@
   font-size:  0;
   background:  none;
   border:  none;
-  width:  10px;
-  height:  10px;
+  width:  12px;
+  height:  12px;
   padding:  0;
   border-radius:  25px;
   -moz-border-radius:  25px;
@@ -277,7 +286,7 @@
   background:  #fff;
 }
 .homeslider ul.slides.slick-slider .slick-dots li.slick-active button{
-  width:  40px;
+  width:  50px;
   background:  var(--color-btn-secondary);
 }
 @media (max-width: 1629px)  {
