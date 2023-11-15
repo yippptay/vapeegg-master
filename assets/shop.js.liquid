@@ -755,16 +755,14 @@
           }]
       }); 
 
-      e('body .brands_slider_wrap .tt-brand_slider').slick({   
-        slidesToShow: 6,
-        arrows: false,
+      e('body .brands_slider_wrap .tt-brand_slider').slick({
         autoplay: true,
-        autoplaySpeed: 0,
-        speed: 4000,
-        cssEase: "linear",
+        autoplaySpeed: 2000,
         pauseOnHover: true,
-        infinite:true,
-        rewind: false,
+        slidesToShow: 6,
+        touchThreshold: 100,
+        arrows: false,
+        swipeToSlide: true,
         responsive: [
           {
             breakpoint: 1600,

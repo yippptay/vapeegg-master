@@ -696,7 +696,7 @@
                         {% if product.metafields.custom.brand %}
                           <p style="font-size: 16px;">
                             <label>Brand :</label>
-                            <span>{{ product.metafields.custom.brand }}</span>
+                            <a href="/collections/{{ product.metafields.custom.brand | downcase | replace: ' ', '-' }}" style="text-decoration: underline;">{{ product.metafields.custom.brand }}</a>
                           </p>
                         {% endif %}
       

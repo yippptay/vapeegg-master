@@ -13360,7 +13360,7 @@ body .compare-model .max_compare  {
   font-family:  var(--font-stack-header);
     }
 .product-price__price,  .product-price__price .money,  .price,  price .money  {
-  font:  500 16px/24px var(--font-stack-header);
+  font:  700 16px/24px var(--font-stack-header);
     color:  var(--color-sale-text);
       }
 .product-price__price.compare_price .money,  .product-price__price.compare_price  {

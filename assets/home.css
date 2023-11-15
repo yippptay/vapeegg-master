@@ -1502,6 +1502,7 @@ body.hover_style3 .categoryslider .category_slider_content .cat-slider  {
   position:  relative;
   display:  block;
   overflow:  hidden;
+  border-radius:  5px;
 }
 .cmsblockbanner .banner .banner-content  {
   position:  absolute;
@@ -1563,18 +1564,19 @@ border-radius: 5px;
   font:  500 22px/24px var(--font-stack-body);
     }
 .cmsblockbanner .banner a img  {
-  transition:  all 400ms ease-in-out 0s;
-  -webkit-transition:  all 400ms ease-in-out 0s;
-  -moz-transition:  all 400ms ease-in-out 0s;
-  -o-transition:  all 400ms ease-in-out 0s;
-  -ms-transition:  all 400ms ease-in-out 0s;
+  transition: all .4s ease-in-out 0s;
+  -webkit-transition: all .4s ease-in-out 0s;
+  -moz-transition: all .4s ease-in-out 0s;
+  -o-transition: all .4s ease-in-out 0s;
+  -ms-transition: all .4s ease-in-out 0s;
+  border-radius: 5px;
 }
 .cmsblockbanner .banner a:hover img  {
-  transform:  scale(1.1);
-  -webkit-transform:  scale(1.1);
-  -moz-transform:  scale(1.1);
-  -o-transform:  scale(1.1);
-  -ms-transform:  scale(1.1);
+  transform:  scale(1.05);
+  -webkit-transform:  scale(1.05);
+  -moz-transform:  scale(1.05);
+  -o-transform:  scale(1.05);
+  -ms-transform:  scale(1.05);
 }
 @media(max-width: 1650px){
   .cmsblockbanner .banner .banner-content .title, .cmsblockbanner .banner .banner-content .subtitle {
@@ -1993,11 +1995,11 @@ border-radius: 5px;
   transition:  all 400ms ease-in-out 0s;
 }
 #ttcmsservices .block_content .service:hover .ttshipping_img.service-icon  {
-  transform:  rotateY(180deg);
-  -webkit-transform:  rotateY(180deg);
-  -moz-transform:  rotateY(180deg);
-  -o-transform:  rotateY(180deg);
-  -ms-transform:  rotateY(180deg);
+  transform:  rotateY(360deg);
+  -webkit-transform:  rotateY(360deg);
+  -moz-transform:  rotateY(360deg);
+  -o-transform:  rotateY(360deg);
+  -ms-transform:  rotateY(360deg);
 }
 #ttcmsservices .block_content .service .content  {
   float:  none;
