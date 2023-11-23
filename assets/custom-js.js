@@ -531,8 +531,8 @@ $(window).scroll(function(){
     items :3, //1 items above 1000px browser width
     nav : false,
     dots : false,
-    loop: false,
-    autoplay:false,
+    loop: true,
+    autoplay: true,
     responsive: {
       992: {
         items: 3

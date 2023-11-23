@@ -1107,9 +1107,10 @@
   float:  left;
   width:  100%;
   position:  relative;
-  border:  1px solid var(--color-border);
-    background:  #fff;
-    }
+  border:  2px solid var(--color-border);
+  background:  #fff;
+  border-radius: 5px;
+ }
 body.hover_style3 .categoryslider .category_slider_content .cat-slider  {
   padding:  0;
 }
@@ -1185,11 +1186,11 @@ body.hover_style3 .categoryslider .category_slider_content .cat-slider  {
   -ms-transition:  all 400ms ease-in-out 0s;
 }
 .category_slider_content .ttcmscatbanner a:hover img  {
-  transform:  scale(1.1);
-  -webkit-transform:  scale(1.1);
-  -moz-transform:  scale(1.1);
-  -o-transform:  scale(1.1);
-  -ms-transform:  scale(1.1);
+  transform:  scale(1.05);
+  -webkit-transform:  scale(1.05);
+  -moz-transform:  scale(1.05);
+  -o-transform:  scale(1.05);
+  -ms-transform:  scale(1.05);
 }
 .category_slider_content .ttcmscatbanner a .banner-content  {
   position:  absolute;

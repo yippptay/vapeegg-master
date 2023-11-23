@@ -4,7 +4,7 @@
 <div id="shopify-section-sidebar-category" class="shopify-section">
   <div class="widget widget_product_categories">
     {% if linkedlist_title %}
-    <h4>{{ linkedlist_title }} </h4>  
+    <h3>{{ linkedlist_title }}</h3>  
     {% endif %}
     {% if linklists[sidebar_linklist].links.size > 0 %}
     <ul class="product-categories dt-sc-toggle-frame-set">
@@ -12,24 +12,24 @@
       {% assign child_list_handle = link.title | split: '[' | first | handleize %}      
       {% if link and link.links != blank  %}
       <li class="cat-item cat-item-39 cat-parent first">
-        <a href="{{ link.url }}" class="dt-sc-toggle {% if link.active %}active{% endif %}">{{ link.title   | split: '[' | first | escape }} </a> 
+        <a href="{{ link.url }}" class="dt-sc-toggle {% if link.active %}active{% endif %}">{{ link.title   | split: '[' | first | escape }}</a> 
         {% assign inner_link = link.title | split: '[' | first | handleize %}
         <ul class="children dt-sc-toggle-content">
           {% for child_link in link.links %}
           {% assign child_list_handle = child_link.title | split: '[' | first1 | handleize %}
           {% if child_link and child_link.links != blank  %}
           <li class="cat-item cat-item-39 cat-parent first1">
-            <a href="{{ child_link.url }}" class="dt-sc-toggle {% if link.active %}active{% endif %}">{{ child_link.title  | split: '[' | first | escape }} </a>
+            <a href="{{ child_link.url }}" class="dt-sc-toggle {% if link.active %}active{% endif %}">{{ child_link.title  | split: '[' | first | escape }}</a>
             {% assign inner_link = link.title | split: '[' | first | handleize %}
             <ul class="children dt-sc-toggle-content">
               {% for child_link in child_link.links %}
-              <li><a href="{{ child_link.url }}">{{ child_link.title  | split: '[' | first | escape }} </a></li>
+              <li><a href="{{ child_link.url }}">{{ child_link.title  | split: '[' | first | escape }}</a></li>
               {% endfor %}
             </ul>
             <span class="dt-menu-expand">+</span>   
           </li>
           {% else %}
-          <li class="cat-item cat-item-39 cat-parent"><a href="{{ child_link.url }}">{{ child_link.title  | split: '[' | first | escape }} </a></li>
+          <li class="cat-item cat-item-39 cat-parent"><a href="{{ child_link.url }}">{{ child_link.title  | split: '[' | first | escape }}</a></li>
           {% endif %}
           {% endfor %}
         </ul>
@@ -37,7 +37,7 @@
       </li>
       {% else %}
       <li class="cat-item cat-item-39 cat-parent">
-        <i></i><a href="{{ link.url }}">{{ link.title | split: '[' | first | escape }} </a> 
+        <i></i><a href="{{ link.url }}">{{ link.title | split: '[' | first | escape }}</a> 
       </li>
       {% endif %}
       {% endfor %}

@@ -8,7 +8,7 @@
           {% if settings.use_custom_list_collection %}
           {% assign collection = link.object %}      
           {% else %}
-          {%- for collection in collections -%}
+          {%- for collection in collections -%}{% comment %}EasylockdownFilterBegin{% endcomment %}{% capture easylockdownFilter %}{% render 'easylockdown_filter_collections' with collection, easylockdownRender: true, easylockdownItemSelectorOff: easylockdownItemSelectorOff %}{% endcapture %}{% assign easylockdownFilter = easylockdownFilter | strip %}{% if easylockdownFilter == 'continue' %}{% continue %}{% else %}{{ easylockdownFilter }}{% endif %}{% comment %}EasylockdownFilterEnd{% endcomment %}
           {% unless collection.handle == 'frontpage' %}
           {% if settings.collection_grid_column == '3' %}
           {% assign collection_item_width = 'grid__item wide--one-third post-large--one-third large--one-third small--grid__item col-sm-4 col-xs-6' %}
@@ -49,7 +49,7 @@
         </div>
         {% else %}
         <div class="list-collection-products {{ settings.Collection_type }} owl-carousel">  
-          {%- for collection in collections -%}
+          {%- for collection in collections -%}{% comment %}EasylockdownFilterBegin{% endcomment %}{% capture easylockdownFilter %}{% render 'easylockdown_filter_collections' with collection, easylockdownRender: true, easylockdownItemSelectorOff: easylockdownItemSelectorOff %}{% endcapture %}{% assign easylockdownFilter = easylockdownFilter | strip %}{% if easylockdownFilter == 'continue' %}{% continue %}{% else %}{{ easylockdownFilter }}{% endif %}{% comment %}EasylockdownFilterEnd{% endcomment %}
           {% unless collection.handle == 'frontpage' %}
           {% render 'collection-lists' %}
           {% unless forloop.last %}<hr>{% endunless %}

@@ -253,41 +253,57 @@
         "desc_color": "#666666"
       }
     },
-    "1650258784d34e02af": {
-      "type": "product-tab-model",
+    "80a6aed2-a59d-4039-93ee-4aa9645ebf1b": {
+      "type": "category-slider",
       "blocks": {
-        "1650258784467d1b9d-0": {
+        "463d37ab-c0a4-4113-af95-305f6d18c9f2": {
           "type": "text_block",
           "settings": {
             "title": "Disposables",
             "collection": "disposables"
           }
         },
-        "944372a6-c01c-4a41-aace-f761050f4ff9": {
+        "68afbde1-5548-4ea6-99e5-a31db598a917": {
           "type": "text_block",
           "settings": {
             "title": "E-Liquid",
             "collection": "e-liquids"
           }
         },
-        "3fb8b834-1566-4897-81c8-257fe60b07b7": {
+        "f3fc1515-e156-41cc-97d6-619be9695e4b": {
           "type": "text_block",
           "settings": {
-            "title": "Hardware (Coming Soon)",
+            "title": "Hardware",
             "collection": "hardware"
           }
         }
       },
       "block_order": [
-        "1650258784467d1b9d-0",
-        "944372a6-c01c-4a41-aace-f761050f4ff9",
-        "3fb8b834-1566-4897-81c8-257fe60b07b7"
+        "463d37ab-c0a4-4113-af95-305f6d18c9f2",
+        "68afbde1-5548-4ea6-99e5-a31db598a917",
+        "f3fc1515-e156-41cc-97d6-619be9695e4b"
       ],
       "settings": {
+        "tabtitle": "Shop By Category",
         "product_rows": false,
-        "product_col": "7",
-        "button_text": "#666666",
-        "button_hover_text": "#2b4861"
+        "banner_display": true,
+        "banner_image": "shopify:\/\/shop_images\/reds-apple-2.jpg",
+        "banner_image_link": "shopify:\/\/collections\/7daze",
+        "banner_title1": "",
+        "banner_subtitle1": "",
+        "banner_pricedesc1": "",
+        "banner_price1": "",
+        "banner_title_clr1": "#ffffff",
+        "banner_subtitle_clr1": "#ffffff",
+        "banner_pricedesc_clr1": "#ffffff",
+        "banner_price_clr1": "#ffffff",
+        "cat_product_col": "6",
+        "tab_title_clr": "#000000",
+        "tab_clr": "#000000",
+        "tab_hvr_clr": "#000000",
+        "heading_bg": "#f7f7f7",
+        "view_btn": "All Categories",
+        "view_url": "shopify:\/\/collections"
       }
     },
     "9ed37c25-fc65-429a-93c7-9f52b4bc8403": {
@@ -297,7 +313,7 @@
           "type": "image",
           "settings": {
             "banner_image1": "shopify:\/\/shop_images\/candy-king.jpg",
-            "banner_link1": "",
+            "banner_link1": "shopify:\/\/collections\/candy-king",
             "title": "",
             "subtitle": "",
             "desc": "",
@@ -306,7 +322,7 @@
             "text_position": "left",
             "title_color": "#f12a43",
             "desc_color": "#f12a43",
-            "desc_bgcolor": "#fff",
+            "desc_bgcolor": "#ffffff",
             "price_desc_color": "#f12a43",
             "price_color": "#f12a43"
           }
@@ -314,8 +330,8 @@
         "14c20c51-07cb-49a8-a7c3-a77f5bcb2974": {
           "type": "image",
           "settings": {
-            "banner_image1": "shopify:\/\/shop_images\/image_2023_11_15T18_55_43_690Z.png",
-            "banner_link1": "",
+            "banner_image1": "shopify:\/\/shop_images\/flum-banner.jpg",
+            "banner_link1": "shopify:\/\/products\/flum-pebble-x-6000-disposable-14ml-10-pack",
             "title": "",
             "subtitle": "",
             "desc": "",
@@ -324,7 +340,7 @@
             "text_position": "left",
             "title_color": "#f12a43",
             "desc_color": "#f12a43",
-            "desc_bgcolor": "#fff",
+            "desc_bgcolor": "#ffffff",
             "price_desc_color": "#f12a43",
             "price_color": "#f12a43"
           }
@@ -333,7 +349,7 @@
           "type": "image",
           "settings": {
             "banner_image1": "shopify:\/\/shop_images\/ellow.jpg",
-            "banner_link1": "",
+            "banner_link1": "shopify:\/\/products\/blvk-ello-plus-6000-disposable-12ml-10-pack",
             "title": "",
             "subtitle": "",
             "desc": "",
@@ -342,7 +358,7 @@
             "text_position": "left",
             "title_color": "#f12a43",
             "desc_color": "#f12a43",
-            "desc_bgcolor": "#fff",
+            "desc_bgcolor": "#ffffff",
             "price_desc_color": "#f12a43",
             "price_color": "#f12a43"
           }
@@ -354,6 +370,51 @@
         "2e9bf83d-91f1-44a2-a401-eb3b3c0ee1a4"
       ],
       "settings": {
+      }
+    },
+    "1650258784d34e02af": {
+      "type": "product-tab-model",
+      "blocks": {
+        "39acb39f-62d5-45fb-9696-2d88f9abf6d9": {
+          "type": "text_block",
+          "settings": {
+            "title": "BOGO Deals",
+            "collection": "bogo"
+          }
+        },
+        "4e2076f9-24dc-4a29-8d2f-d5a6c8bd16fd": {
+          "type": "text_block",
+          "settings": {
+            "title": "On Sale",
+            "collection": "on-sale"
+          }
+        },
+        "467bf233-a820-4c28-9868-a23d3f2fe700": {
+          "type": "text_block",
+          "settings": {
+            "title": "Under $10",
+            "collection": "under-10"
+          }
+        },
+        "d38ca53d-6c8f-4d75-9153-d65a89a5efd5": {
+          "type": "text_block",
+          "settings": {
+            "title": "Under $5",
+            "collection": "under-5"
+          }
+        }
+      },
+      "block_order": [
+        "39acb39f-62d5-45fb-9696-2d88f9abf6d9",
+        "4e2076f9-24dc-4a29-8d2f-d5a6c8bd16fd",
+        "467bf233-a820-4c28-9868-a23d3f2fe700",
+        "d38ca53d-6c8f-4d75-9153-d65a89a5efd5"
+      ],
+      "settings": {
+        "product_rows": false,
+        "product_col": "7",
+        "button_text": "#666666",
+        "button_hover_text": "#2b4861"
       }
     },
     "our_brand": {
@@ -428,6 +489,13 @@
             "image": "shopify:\/\/shop_images\/geekvape.png",
             "link": ""
           }
+        },
+        "6aa657e7-eb39-48e8-b111-abd104f1059b": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/puffmi-logo.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -440,34 +508,12 @@
         "4d9e8de0-2425-4000-b6a0-a3d8bcc972fd",
         "b647aea9-5e4e-4a94-bc3d-b3f2be837eb9",
         "c24e8016-f590-4c35-9335-70f021320ee0",
-        "a8a21cc5-63ba-4842-b6ce-36e56e593d26"
+        "a8a21cc5-63ba-4842-b6ce-36e56e593d26",
+        "6aa657e7-eb39-48e8-b111-abd104f1059b"
       ],
       "settings": {
         "addclass": "brands",
         "bg_color": "#ffffff"
-      }
-    },
-    "a8157e8f-e2df-4394-b567-3f691f5246b4": {
-      "type": "special-product",
-      "disabled": true,
-      "settings": {
-        "Special_pro": "3",
-        "class": "specialproduct",
-        "title": "On Sale",
-        "collection": "on-sale"
-      }
-    },
-    "f6c9f083-a81b-4e79-8ce9-fd963dc5967f": {
-      "type": "best-seller",
-      "disabled": true,
-      "settings": {
-        "bg_color": "#f5f5f5",
-        "parallax_enable": false,
-        "class": "bestproduct",
-        "product_rows": false,
-        "title": "bestseller collection",
-        "collection": "",
-        "product_col": "4"
       }
     }
   },
@@ -477,10 +523,9 @@
     "a2fd6f0b-d1e8-4d38-a0a7-28760e59f741",
     "1647426476a26bdc71",
     "57a1c7ee-7d36-45bd-8109-169f200805da",
-    "1650258784d34e02af",
+    "80a6aed2-a59d-4039-93ee-4aa9645ebf1b",
     "9ed37c25-fc65-429a-93c7-9f52b4bc8403",
-    "our_brand",
-    "a8157e8f-e2df-4394-b567-3f691f5246b4",
-    "f6c9f083-a81b-4e79-8ce9-fd963dc5967f"
+    "1650258784d34e02af",
+    "our_brand"
   ]
 }

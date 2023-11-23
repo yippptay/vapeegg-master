@@ -1,9 +1,9 @@
 <div class="container" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %}>
   <div class="brands_slider_wrap" data-section-id="{{ section.id }}" style="background:{{section.settings.bg_color }}">
-    {%- assign product_limit =  7 -%}
+    {% comment %} {%- assign product_limit =  10 -%} {% endcomment %}
     <div id="{{ section.settings.addclass }}_list_slider" class="tt-brand_slider">
       {% if section.blocks.size > 0 %}
-      {% for block in section.blocks limit:product_limit %}
+      {% for block in section.blocks %}
       <div class="brand-bar__item" {{ block.shopify_attributes }}>
         {% if block.settings.link != blank %}
         <a href="{{ block.settings.link }}">

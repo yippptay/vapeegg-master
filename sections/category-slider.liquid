@@ -2,7 +2,7 @@
   {%- assign collection = collections[section.settings.collection] -%}
   {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
   {%- assign image_size = '270x270' -%}
-  {%- assign product_limit =  8 -%}
+  {%- assign product_limit = 24 -%}
   <div class="container"> 
     <div class="category_slider_content {% if section.settings.banner_display != blank %} banner_display{% endif %}"> 
       {% if section.settings.banner_display != blank %}
@@ -48,7 +48,7 @@
                 <style> .ttcategoryslider-tab .nav-tabs span#menuicon-{{ block.id }}.icon{background-image:url({{ block.settings.cat_sub_menu_icon | img_url: '18x18'}});-webkit-background-image:url({{ block.settings.cat_sub_menu_icon | img_url: '18x18'}});background-repeat: no-repeat;}</style>   
                 {% endfor %} 
               </ul>          
-              <a class="view-all" href="{% if section.settings.view_url != blank %}{{ section.settings.view_url }} {% else %}#{% endif %}"><img src="{{ section.settings.viewall_icon | img_url:'master' }}" alt="viewall-icon" /><span>{{ section.settings.view_btn }}</span></a> 
+              {% comment %} <a class="view-all" href="{% if section.settings.view_url != blank %}{{ section.settings.view_url }} {% else %}#{% endif %}"><img src="{{ section.settings.viewall_icon | img_url:'master' }}" alt="viewall-icon" /><span>{{ section.settings.view_btn }}</span></a>  {% endcomment %}
             </div>
           </div> 
           {%  assign block_size = 1 %}  
