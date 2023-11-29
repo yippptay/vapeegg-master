@@ -1,5 +1,5 @@
 <div data-section-id="{{ section.id }}" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %} class="best-collection-product {% if section.settings.type_bg != "rgba(0,0,0,0)" %} has_bg{% endif %}">
-  <div class="page-width slider-bestproduct-inner {% if section.settings.parallax_enable %} parallex {% endif %}" data-source-url="{{ section.settings.image | img_url: 'master' }}" style="background-color:{{section.settings.bg_color}};background-image:url('{{ section.settings.image | img_url: 'master' }}'); {% if section.settings.parallax_enable %} background-position: 50% 65.8718%; {% else %} background-size: contain; {% endif %}">
+  <div class="page-width slider-bestproduct-inner {% if section.settings.parallax_enable %}parallex {% endif %}" data-source-url="{{ section.settings.image | img_url: 'master' }}" style="background-color:{{section.settings.bg_color}};background-image:url('{{ section.settings.image | img_url: 'master' }}'); {% if section.settings.parallax_enable %} background-position: 50% 65.8718%; {% else %} background-size: contain; {% endif %}">
     <div class="container">
       <div class="slider-bestproduct-wrap">
         <div class="section-header">
@@ -26,12 +26,12 @@
                   {% endif %}
                   {% endif %}
                   {% endif %}
-                  <div data-id="product-{{ product.id }}"  data-col="{{ product.id }}" class="item-row product-layouts item-row grid-view-item{% unless product.available %} product-price--sold-out grid-view-item--sold-out{% endunless %}">
+                  <div data-id="product-{{ product.id }}" data-col="{{ product.id }}" class="item-row product-layouts item-row grid-view-item{% unless product.available %} product-price--sold-out grid-view-item--sold-out{% endunless %}">
                     <div class="product-wrapper{% if product.images.size > 1 %} product_container{% endif %}{% if settings.product_hover_image %} hover_imgs{% endif %}">
                       {% if product.title %}
-                      {%- assign compare_at_price = product.compare_at_price -%} 
-                      {%- assign price = product.price -%}          
-                      {% else %} 
+                      {%- assign compare_at_price = product.compare_at_price -%}
+                      {%- assign price = product.price -%}
+                      {% else %}
                       {%- assign compare_at_price = 1999 -%}
                       {%- assign price = 1999 -%}
                       {% endif %}

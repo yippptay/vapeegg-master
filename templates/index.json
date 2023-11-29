@@ -39,7 +39,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Meshbox.jpg",
-            "image_link": "",
+            "image_link": "shopify:\/\/collections\/puffmi-collection",
             "show_video": false,
             "video_url": "",
             "title": "",
@@ -66,7 +66,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/BLVK-Salt.jpg",
-            "image_link": "",
+            "image_link": "shopify:\/\/collections\/blvk-pink-salts-collection",
             "show_video": false,
             "video_url": "",
             "title": "",
@@ -159,7 +159,8 @@
     "a2fd6f0b-d1e8-4d38-a0a7-28760e59f741": {
       "type": "right-banner",
       "settings": {
-        "right_banner": "shopify:\/\/shop_images\/Artboard.jpg",
+        "right_banner": "shopify:\/\/shop_images\/FB86B42D-EBB7-499F-89D9-2D86680816FF.png",
+        "banner_link3": "shopify:\/\/collections\/pod-juice",
         "title": "",
         "subtitle": "",
         "price_desc": "",
@@ -173,7 +174,8 @@
     "1647426476a26bdc71": {
       "type": "right-banner2",
       "settings": {
-        "banner_image1": "shopify:\/\/shop_images\/create.jpg",
+        "banner_image1": "shopify:\/\/shop_images\/Layer_1_1.png",
+        "banner_link1": "",
         "banner_title1": "",
         "title_color1": "#313c46",
         "banner_subtitle1": "",
@@ -183,7 +185,8 @@
         "banner_price1": "",
         "price_color1": "#f04706",
         "text1_position": "right",
-        "banner_image2": "shopify:\/\/shop_images\/instawack.jpg",
+        "banner_image2": "shopify:\/\/shop_images\/Layer_5.png",
+        "banner_link2": "",
         "banner_title2": "",
         "title_color2": "#313c46",
         "banner_subtitle2": "",
@@ -206,12 +209,12 @@
             "desc": "on orders over $80"
           }
         },
-        "a3fdf556-0480-47f4-a56a-acb59d0799f1": {
+        "62e83d37-4577-44e0-bea1-3c36368bdf45": {
           "type": "s_text",
           "settings": {
-            "service_icon": "shopify:\/\/shop_images\/live_help_FILL0_wght700_GRAD200_opsz48.png",
-            "title": "Online Support",
-            "desc": "info@vapeegg.com"
+            "service_icon": "shopify:\/\/shop_images\/sell_FILL0_wght700_GRAD200_opsz48.png",
+            "title": "15% Off",
+            "desc": "on first orders"
           }
         },
         "2f8706c7-f8c9-4d09-9904-f1c06d130da0": {
@@ -222,12 +225,12 @@
             "desc": "Earn points on every order"
           }
         },
-        "62e83d37-4577-44e0-bea1-3c36368bdf45": {
+        "a3fdf556-0480-47f4-a56a-acb59d0799f1": {
           "type": "s_text",
           "settings": {
-            "service_icon": "shopify:\/\/shop_images\/sell_FILL0_wght700_GRAD200_opsz48.png",
-            "title": "15% Off",
-            "desc": "on first orders"
+            "service_icon": "shopify:\/\/shop_images\/live_help_FILL0_wght700_GRAD200_opsz48.png",
+            "title": "Online Support",
+            "desc": "info@vapeegg.com"
           }
         },
         "35b03893-1fbe-4cfe-9768-b7ad8f258ec6": {
@@ -241,9 +244,9 @@
       },
       "block_order": [
         "871e5f5c-9cc5-4d13-bace-8d5114d23f8c",
-        "a3fdf556-0480-47f4-a56a-acb59d0799f1",
-        "2f8706c7-f8c9-4d09-9904-f1c06d130da0",
         "62e83d37-4577-44e0-bea1-3c36368bdf45",
+        "2f8706c7-f8c9-4d09-9904-f1c06d130da0",
+        "a3fdf556-0480-47f4-a56a-acb59d0799f1",
         "35b03893-1fbe-4cfe-9768-b7ad8f258ec6"
       ],
       "settings": {
@@ -251,6 +254,19 @@
         "title_color": "#000000",
         "title_hover_color": "#fc9f22",
         "desc_color": "#666666"
+      }
+    },
+    "3adc5d5e-294d-4e73-94ef-c24a783ee8aa": {
+      "type": "best-seller",
+      "settings": {
+        "bg_color": "#f5f5f5",
+        "parallax_enable": true,
+        "image": "shopify:\/\/shop_images\/bg_1c789e04-0f1b-4035-8f94-a3babbfdec43.jpg",
+        "class": "bestproduct",
+        "product_rows": true,
+        "title": "Trending",
+        "collection": "trending",
+        "product_col": "4"
       }
     },
     "80a6aed2-a59d-4039-93ee-4aa9645ebf1b": {
@@ -375,18 +391,18 @@
     "1650258784d34e02af": {
       "type": "product-tab-model",
       "blocks": {
-        "39acb39f-62d5-45fb-9696-2d88f9abf6d9": {
-          "type": "text_block",
-          "settings": {
-            "title": "BOGO Deals",
-            "collection": "bogo"
-          }
-        },
         "4e2076f9-24dc-4a29-8d2f-d5a6c8bd16fd": {
           "type": "text_block",
           "settings": {
             "title": "On Sale",
             "collection": "on-sale"
+          }
+        },
+        "d38ca53d-6c8f-4d75-9153-d65a89a5efd5": {
+          "type": "text_block",
+          "settings": {
+            "title": "Under $5",
+            "collection": "under-5"
           }
         },
         "467bf233-a820-4c28-9868-a23d3f2fe700": {
@@ -396,19 +412,19 @@
             "collection": "under-10"
           }
         },
-        "d38ca53d-6c8f-4d75-9153-d65a89a5efd5": {
+        "a019b19d-86a8-4821-86f2-ddac72bb554b": {
           "type": "text_block",
           "settings": {
-            "title": "Under $5",
-            "collection": "under-5"
+            "title": "Clearance",
+            "collection": "clearance"
           }
         }
       },
       "block_order": [
-        "39acb39f-62d5-45fb-9696-2d88f9abf6d9",
         "4e2076f9-24dc-4a29-8d2f-d5a6c8bd16fd",
+        "d38ca53d-6c8f-4d75-9153-d65a89a5efd5",
         "467bf233-a820-4c28-9868-a23d3f2fe700",
-        "d38ca53d-6c8f-4d75-9153-d65a89a5efd5"
+        "a019b19d-86a8-4821-86f2-ddac72bb554b"
       ],
       "settings": {
         "product_rows": false,
@@ -523,6 +539,7 @@
     "a2fd6f0b-d1e8-4d38-a0a7-28760e59f741",
     "1647426476a26bdc71",
     "57a1c7ee-7d36-45bd-8109-169f200805da",
+    "3adc5d5e-294d-4e73-94ef-c24a783ee8aa",
     "80a6aed2-a59d-4039-93ee-4aa9645ebf1b",
     "9ed37c25-fc65-429a-93c7-9f52b4bc8403",
     "1650258784d34e02af",

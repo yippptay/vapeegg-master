@@ -5,7 +5,7 @@
   {%- assign product_limit = 32 -%}  
   <div class="container">
     <div class="section-header section-header--small aos-init" style="float: none;" data-aos="fade-up">
-      <h2 class="tt-title">Shop By Category</h2>  
+      {% comment %} <h2 class="tt-title">Shop By Category</h2>   {% endcomment %}
     </div>
     <div class="grid__item" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %}>           
       {% if section.blocks.size > 1 %}

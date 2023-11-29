@@ -616,12 +616,12 @@ $(window).scroll(function(){
     }
   });
   $('body #ttcmsservices .block_content').owlCarousel({
-    items :5, //1 items above 1000px browser width
-    nav : false,
-    dots : true,
-    loop: false,
-    autoplay:false,
-    rewindNav:true,
+    items : 5, //1 items above 1000px browser width
+    nav : true,
+    dots: false,
+    loop: true,
+    autoplay: true,
+    rewindNav: true,
     responsive: {
       1550: {
         items: 5
@@ -914,10 +914,10 @@ $(window).scroll(function(){
   });  
   var p_col = jQuery('.slider-bestproduct').data('col');
   $('body .slider-bestproduct').owlCarousel({
-    items : p_col, //10 items above 1000px browser width
+    items : p_col, // 10 items above 1000px browser width
     nav : true,
-    autoplay:false,
-    autoplaySpeed:1500,	
+    autoplay: false,
+    autoplaySpeed: 1500,
     dots : false,
     responsive: {
       100: {
