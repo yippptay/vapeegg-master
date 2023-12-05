@@ -31,7 +31,7 @@
                     <a class="icon zoom" data-lightbox="example-set" href="{{ article | img_url: 'master' }}" title="Click to view Full Image">
                       <i class="mdi mdi-magnify"></i>
                     </a> 
-                  </span>          
+                  </span>
                   {% else %}
                   <img loading="lazy" src="{{ 'no-image.gif' | img_url: 'master' }}"/>
                   {% endif %}
@@ -39,7 +39,7 @@
                   <div class="blogs-sub-title">
                     {% if section.settings.show_blog_4_date %}
                     <p class="blog-date">
-                      <span data-datetime="{{ article.published_at | date: '%Y-%m-%d' }}"><i class="mdi mdi-calendar"></i><span class="date">{{ article.published_at | date: '%d' }} {{ article.published_at | date: '%b' }} , {{ article.published_at | date: '%Y' }}</span></span>             
+                      <span data-datetime="{{ article.published_at | date: '%Y-%m-%d' }}"><i class="mdi mdi-calendar"></i><span class="date">{{ article.published_at | date: '%d' }} {{ article.published_at | date: '%b' }} , {{ article.published_at | date: '%Y' }}</span></span>
                     </p>
                     {% endif %}
                     {% if article.comments_enabled? %}

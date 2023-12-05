@@ -11,7 +11,7 @@
         {% if settings.category_image != blank %}
         <div class="category_img">
           <img loading="lazy" src="{{ settings.category_image | image_url }}"  alt="{{ collection.title | escape }}" display="block" width="1170" height="250" />
-        </div>   
+        </div>
         {% endif %}
         <h1 class="section-header__title text-left">{{ collection.title }}</h1>
         <div class="description">{{ collection.description }}</div>
@@ -22,7 +22,7 @@
       <div class="filter-wrapper {{ settings.collection_sidebar_use }} wrap_{{ settings.collection_filter_pos }}">
         {% if settings.collection_sidebar_use == "full_width" %}
         {% if settings.collection_filter_pos == "left_filter" %}  
-        <a class="filter-left" href="#"><i class="mdi mdi-format-align-left"></i>filter</a>   
+        <a class="filter-left" href="#"><i class="mdi mdi-format-align-left"></i>filter</a>
         {% endif %}
         {% endif %}
         {%- if enable_sorting -%}
@@ -49,7 +49,7 @@
         <a class="filter-right" href="#">filter<i class="mdi mdi-format-align-right"></i></a> 
         {% endif %}
         {% endif %}
-        <div class="sorting_wrapper">     
+        <div class="sorting_wrapper">
           <div class="filter-show grid__item">
             <label>{{ 'collections.toolbar.show' | t }}</label>
             {% assign current_page_size = paginate.page_size %}

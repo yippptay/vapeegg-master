@@ -19,12 +19,12 @@
 {% endif %}
 <li class="grid__item item-row  {{grid_item_width}}{% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" id="product-{{ product.id }}" {% if template contains 'index' %} {% if forloop.index > section.settings.total_products_load %} style="display:none"  data-wow-duration="1{{ forloop.index }}" {% endif %}{% endif %}>
   <div class="products">
-    <div class="product-container">  
+    <div class="product-container">
       {% if settings.count_down_enable and settings.count_down_collections %}
       {% assign dealTime = settings.home_productdeal_time | split: ' ' | join: ' ' | split: ' ' %}
       {% include 'deal-snippet' %}
       {% endif %}
-      <a href="{{ product.url | within: collection }}" class="grid-link">    
+      <a href="{{ product.url | within: collection }}" class="grid-link">
         {% unless sold_out %}
         {% if on_sale and settings.collections_show_sale_circle %}
         <div class="featured-tag">
@@ -43,38 +43,38 @@
         <div class="ImageOverlayCa"></div>
         {% if product.images.size > 1 %}
         <div class="reveal"> 
-          <span class="product-additional">      
+          <span class="product-additional">
             <img class="" src="{{ product.images.last | product_img_url: 'master' }}" alt="{{ product.images.last.alt | escape }}" />
           </span>
 		 <img src="{{ product.featured_image.src | img_url: 'master' }}" class="featured-image" alt="{{ product.featured_image.alt | escape }}">
-        </div>      
+        </div>
         {% else %}
         <img src="{{ product.featured_image.src | img_url: 'master' }}" class="featured-image" alt="{{ product.featured_image.alt | escape }}">
         {% endif %}
       </a>
       <div class="ImageWrapper">
-        <div class="product-button">  
+        <div class="product-button">
           {% if settings.enable_quick_view %}       
-          <a href="javascript:void(0)" id="{{ product.handle }}" class="quick-view-text">                      
+          <a href="javascript:void(0)" id="{{ product.handle }}" class="quick-view-text">
             <i class="icon-eye" aria-hidden="true"></i>
-          </a>       
+          </a>
           {% endif %}
            {% if settings.enable_add_cart %}
       {% if product.available %}    
-      <form  action="/cart/add" method="post" class="variants clearfix" id="cart-form-{{ product.id }}">                                    
-        <input type="hidden" name="id" value="{{ product.variants[0].id }}" />  
+      <form  action="/cart/add" method="post" class="variants clearfix" id="cart-form-{{ product.id }}">
+        <input type="hidden" name="id" value="{{ product.variants[0].id }}" />
          <a class="add-cart-btn">
        <i class="icon-basket"></i>
           </a>
-      </form>  
+      </form>
       {% else %}
        <span class="sold_icon"> </span>
       {% endif %}
       {% endif %} 
            {% if settings.enable_product_detail_link_icon %}       
-          <a href="{{ product.url }}">                      
+          <a href="{{ product.url }}">
             <i class="icon-link" aria-hidden="true"></i>
-          </a>       
+          </a>
           {% endif %}
          
       
@@ -83,7 +83,7 @@
     </div>
     <div class="product-detail">
       
-      <a href="{{ product.url | within: collection }}" class="grid-link__title">{{ product.title }}</a>     
+      <a href="{{ product.url | within: collection }}" class="grid-link__title">{{ product.title }}</a>
       <div class="grid-link__meta">
         <div class="product_price">
           
@@ -95,7 +95,7 @@
         {% if on_sale %}
         <del class="grid-link__sale_price">{{ product.compare_at_price | money }}</del>
         {% endif %}
-          </div>      
+          </div>
             <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
       </div>
     

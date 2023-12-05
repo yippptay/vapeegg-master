@@ -16,7 +16,7 @@
         </span>
         {% if section.settings.show_blog_4_date %}
         <p class="blog-date">
-          <span data-datetime="{{ article.published_at | date: '%Y-%m-%d' }}"><span class="date">{{ article.published_at | date: '%d' }} {{ article.published_at | date: '%b' }} , {{ article.published_at | date: '%Y' }}</span></span>             
+          <span data-datetime="{{ article.published_at | date: '%Y-%m-%d' }}"><span class="date">{{ article.published_at | date: '%d' }} {{ article.published_at | date: '%b' }} , {{ article.published_at | date: '%Y' }}</span></span>
         </p>
         {% endif %}
       </div> {% else %}

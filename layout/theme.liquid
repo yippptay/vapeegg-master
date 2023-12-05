@@ -55,17 +55,17 @@
     {{ 'customer_area.js'  | shopify_asset_url | script_tag }}
     {% endif %}
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'modernizr.min.js' | asset_url }}"></script>  
-    <script src="{{ 'jquery.min.js' | asset_url  }}"></script>  
-    <script src="{{ 'theme.js' | asset_url  }}"></script>  
-    <script src="{{ 'aos.js' | asset_url  }}"></script>  
+    <script src="{{ 'modernizr.min.js' | asset_url }}"></script>
+    <script src="{{ 'jquery.min.js' | asset_url  }}"></script>
+    <script src="{{ 'theme.js' | asset_url  }}"></script>
+    <script src="{{ 'aos.js' | asset_url  }}"></script>
     <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'jquery-cookie.min.js' | asset_url }}"></script>  
-    <script src="{{ 'bootstrap.min.js' | asset_url  }} "></script>  
-    <script src="{{ 'api.jquery.js' | shopify_asset_url  }}" defer="defer"></script>  
+    <script src="{{ 'jquery-cookie.min.js' | asset_url }}"></script>
+    <script src="{{ 'bootstrap.min.js' | asset_url  }} "></script>
+    <script src="{{ 'api.jquery.js' | shopify_asset_url  }}" defer="defer"></script>
     <script src="{{ 'jquery.history.js' | asset_url }} " defer="defer"></script> 
     <script src="{{ 'countdown.js' | asset_url }}" async="async" defer="defer"></script>
-    <script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>  
+    <script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
     <script src="{{ 'slick.min.js' | asset_url }}"></script> 
     {{ 'slick.min.css' | asset_url | stylesheet_tag }}  
     <script src="{{ 'magnific-popup.min.js' | asset_url  }}" defer="defer"></script>
@@ -75,17 +75,17 @@
     <script src="{{ 'parallax.min.js' | asset_url }}" defer="defer"></script> 
     <script src="{{ 'shop.js' | asset_url }}" defer="defer"></script> 
     <script src="{{ 'ResizeSensor.min.js' | asset_url }}   " defer="defer"></script> 
-    <script src="{{ 'theia-sticky-sidebar.min.js' | asset_url}}" defer="defer"></script>     
-    <script src="{{ 'inview.js' | asset_url  }} "></script>      
-    <script src="{{ 'custom-js.js' | asset_url }}"></script>  
-    <script src="{{ 'jquery.hoverdir.js' | asset_url }}" defer="defer"></script>  
-    <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>    
+    <script src="{{ 'theia-sticky-sidebar.min.js' | asset_url}}" defer="defer"></script>
+    <script src="{{ 'inview.js' | asset_url  }} "></script>
+    <script src="{{ 'custom-js.js' | asset_url }}"></script>
+    <script src="{{ 'jquery.hoverdir.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>
     {% if shop.locale == 'ar' or shop.locale == 'he' or shop.locale == 'ur' %} 
     {{ 'rtl.css' | asset_url | stylesheet_tag }} 
-    <script>window.rtltrue = "rtltrue";</script>  
+    <script>window.rtltrue = "rtltrue";</script>
     <style>.customNavigation .navigation_wrap,.customNavigation,.owl-carousel .owl-wrapper-outer,.flexslider .slides,.owl-carousel,.flexslider .slides>li,.flexslider{direction: ltr !important;}</style>
     {% endif %}
-    <script>window.money_format = "{{shop.money_with_currency_format}}";window.shop_currency = "{{ shop.currency }}";window.show_multiple_currencies = {{settings.enable_multiple_currencies}};window.many_in_stock="{{ 'products.product.many_in_stock' | t  }}";window.out_of_stock="{{ 'products.product.out_of_stock' | t  }}";window.in_stock="{{ 'products.product.in_stock' | t  }}";window.unavailable="{{ 'products.product.unavailable' | t  }}";</script>  
+    <script>window.money_format = "{{shop.money_with_currency_format}}";window.shop_currency = "{{ shop.currency }}";window.show_multiple_currencies = {{settings.enable_multiple_currencies}};window.many_in_stock="{{ 'products.product.many_in_stock' | t  }}";window.out_of_stock="{{ 'products.product.out_of_stock' | t  }}";window.in_stock="{{ 'products.product.in_stock' | t  }}";window.unavailable="{{ 'products.product.unavailable' | t  }}";</script>
     <style>.ttloader {background-color:  {{ settings.preloader_bg }};height: 100%;left: 0;position: fixed;top: 0; width: 100%; z-index: 999999;}.rotating {background-image: url("{{ settings.pre_loader_img | img_url: "master" }}");}.rotating {background-position: center center;background-repeat: no-repeat;bottom: 0;height: auto;left: 0;margin: auto;position: absolute;right: 0; top: 0; width: 100%; }</style>
     <script>
       if (window.MSInputMethodContext && document.documentMode) {
@@ -103,12 +103,12 @@
     <div class="compare-model">
       <div class="modal fade" id="modalCompare1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog white-modal modal-sm">
-          <div class="modal-content">              
+          <div class="modal-content">
             <div class="modal-body">
               <div class="modal-header">
                 <p class="max_compare">
                   Maximum products to compare. Limit is 3!
-                </p>  
+                </p>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span class="mdi mdi-close"></span>
                 </button>
@@ -209,7 +209,7 @@
       {% if settings.darkmode_enabled %}
       <ul class="dark-light-mode nav-tabs">
         <li class="active"><a class="light-mode mode" href="#" data-toggle="tab"><span>Light</span></a></li>
-        <li> <a class="dark-mode mode" href="#" data-toggle="tab"><span>Dark</span></a></li>        
+        <li> <a class="dark-mode mode" href="#" data-toggle="tab"><span>Dark</span></a></li>
       </ul>
       {% endif %}
       {% if template == 'index' %}
@@ -233,7 +233,7 @@
           jQuery(".ttloader").fadeOut(500); 
           jQuery(".ttloader .rotating").addClass("load-open");  
         });
-      </script>  
+      </script>
       {% render 'quick-veiw' %}
       {% if template == 'index' %}
       {% render 'popup-newsletter' %}
@@ -241,7 +241,7 @@
       <a href="#" id="GotoTop" title="go to top" class="hidden"><span id="toTopHover"></span><i class="mdi mdi-arrow-up"></i></a>
     </div>
     <script>/* Product Tag Filters - Good for any number of filters on any type of collection pages */var collFilters = jQuery('.coll-filter');collFilters.change(function() {var newTags = [];collFilters.each(function() {if (jQuery(this).val()) {newTags.push(jQuery(this).val());}});if (newTags.length) {var query = newTags.join('+');window.location.href = jQuery('{{ 'tag' | link_to_tag: 'tag' }}').attr('href').replace('/' + 'tag', '/' + query);}else {
-          {% if collection.handle %}window.location.href = '/collections/{{ collection.handle }}';{% elsif collection.products.first.type == collection.title %}window.location.href = '{{ collection.title | url_for_type }}';{% elsif collection.products.first.vendor == collection.title %}window.location.href = '{{ collection.title | url_for_vendor }}';{% endif %}}});</script>    
+          {% if collection.handle %}window.location.href = '/collections/{{ collection.handle }}';{% elsif collection.products.first.type == collection.title %}window.location.href = '{{ collection.title | url_for_type }}';{% elsif collection.products.first.vendor == collection.title %}window.location.href = '{{ collection.title | url_for_vendor }}';{% endif %}}});</script>
     <script>jQuery(document).ready(function() {	"use strict";/* ------------ Start TemplateTrip Parallax JS ------------ */var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);if(!isMobile) {if(jQuery(".parallex").length){jQuery(".parallex:not(.invert_true)").sitManParallex({ invert: false});};  if(jQuery(".parallex.invert_true").length){jQuery(".parallex").sitManParallex({ invert: true});}; }else{jQuery(".parallex:not(.invert_true)").sitManParallex({invert: true});jQuery(".parallex.invert_true").sitManParallex({invert: true});}	/* ------------ End TemplateTrip Parallax JS ------------ */});</script>
     {% render 'currencies' %}   
     {% render 'search-autocomplete' %}

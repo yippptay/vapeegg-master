@@ -355,7 +355,7 @@ openMenuDrawer(summaryElement) {
   setTimeout(() => {
              this.mainDetailsToggle.classList.add('menu-opening');
 });   
-	this.mainDetailsToggle.querySelectorAll('details').forEach(details =>  {
+	this.mainDetailsToggle.querySelectorAll('details').forEach(details =>{
       details.setAttribute('open','');
     });
 summaryElement.setAttribute('aria-expanded', true);
@@ -366,7 +366,7 @@ document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
 closeMenuDrawer(event, elementToFocus = false) {
   if (event !== undefined) {
     this.mainDetailsToggle.classList.remove('menu-opening');
-    this.mainDetailsToggle.querySelectorAll('details').forEach(details =>  {
+    this.mainDetailsToggle.querySelectorAll('details').forEach(details =>{
       details.classList.remove('menu-opening');
     });
     this.mainDetailsToggle.querySelector('summary').setAttribute('aria-expanded', false);

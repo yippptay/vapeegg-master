@@ -17,8 +17,8 @@
 </style>
 <div class="page-width blog_latest_new_home" data-section-id="{{ section.id }}" data-section-type="blog_latest_new_home-section">
   <div class="container" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %}>
-    <header class="section-header">        
-      <h2 class="tt-title">{{ section.settings.title | escape }}</h2>        
+    <header class="section-header">
+      <h2 class="tt-title">{{ section.settings.title | escape }}</h2>
     </header>
     {%- assign blog = blogs[section.settings.blog] -%}
     {% unless blog.articles_count == 0 or blog.empty? %}
@@ -26,7 +26,7 @@
       <div class="row">
         <div id="blog_slider" class="grid-blog-slider owl-carousel owl-theme"> 
           {% for article in blog.articles limit: section.settings.post_limit %}
-          <div id="blog-{{article.id}}" class="article__grid__inner tt-blog-content col-sm-12">               
+          <div id="blog-{{article.id}}" class="article__grid__inner tt-blog-content col-sm-12">
             {% if article.image %}
             <div class="ttblog_image_holder blog_image_holder">
               <a href="{{ article.url }}" class="article__grid-image">
@@ -44,35 +44,35 @@
             {% else %}
             <img loading="lazy" src="{{ 'no-image.gif' | img_url: '380x240' }}"/>
             {% endif %} 
-            <div class="blog-content-wrap{% if article.image %} article__grid-meta--has-image{% endif %}">   
+            <div class="blog-content-wrap{% if article.image %} article__grid-meta--has-image{% endif %}">
               <span class="h3 article__title">
                 <a href="{{ article.url }}">{{ article.title }}</a>
               </span>
               <div class="rte article__grid-excerpt">
                 {% if article.excerpt.size > 0 %}{{ article.excerpt }}{% else %}{{ article.content | strip_html | truncate: 85 }}{% endif %}
-              </div>                 
+              </div>
               <div class="list--inline article__meta-buttons">
                 <a href="{{ article.url }}" class="read-more">{{ 'blogs.article.read_more' | t }}</a>
-              </div>              
+              </div>
               {% if section.settings.blog_show_date %}      
               <span class="article__date">
                 <i class="mdi mdi-calendar" aria-hidden="true"></i>
                 <span class="date">{{ article.published_at | date: '%d' }}</span>
                 <span class="month">{{ article.published_at | date: '%b' }}</span>
                 <span class="year">{{ article.published_at | date: '%Y' }}</span>
-              </span>  
+              </span>
               {% endif %}
               {% if blog.comments_enabled? %}
               {% assign number_of_comments = article.comments_count %}
-              <span class="article__comment">                    
+              <span class="article__comment">
                 <a href="{{ article.url }}#comments">
                   <i class="mdi mdi-comment-multiple-outline" aria-hidden="true"></i>
                   {{ 'blogs.comments.with_count' | t: count: article.comments_count }}
                 </a>
               </span>
               {% endif %}             
-            </div>                
-          </div>     
+            </div>
+          </div>
           {% endfor %}
         </div>
       </div>
@@ -82,13 +82,13 @@
       <div id="blog_slider" class="grid-blog-slider owl-carousel owl-theme">
         {% for i in (1..section.settings.post_limit) %}
         <div class="grid__item medium-up--one-third">
-          <div class="article__grid-meta">  
+          <div class="article__grid-meta">
             <img src="{{ 'no-image.gif' | img_url: '380x240' }}"/>
             <h4 class="article__title">
               <a href="#">{{ 'home_page.onboarding.blog_title' | t }}</a>
             </h4> 
 
-            <div class="rte article__grid-excerpt">{{ 'home_page.onboarding.blog_excerpt' | t | strip_html | truncate: 150}}</div>                   
+            <div class="rte article__grid-excerpt">{{ 'home_page.onboarding.blog_excerpt' | t | strip_html | truncate: 150}}</div>
             <div class="list--inline article__meta-buttons">
               <a href="{{ article.url }}" class="read-more">{{ 'blogs.article.read_more' | t }}</a>
             </div>

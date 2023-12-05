@@ -47,7 +47,7 @@
             {% endif %}     
           </div>
         </div>
-      </aside>  
+      </aside>
       {% endif %}
       {% if section.settings.enable_left_sidebar %}
       <div class="col-xs-12 col-sm-9 collection_wrapper">
@@ -61,7 +61,7 @@
               <div class="meta left">
                 <div class="article_date"><i class="mdi mdi-calendar"></i>
                   <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
-                </div>    
+                </div>
                 <a class="blog__name col-xs-12 text-left text-capitalize padding_0" href="{{ blog.url }}">{{ blog.handle }}</a>
               </div>
               {% if article.comments_enabled? %}
@@ -170,7 +170,7 @@
         </article>
       </div>
       {% endif %}
-    </div>      
+    </div>
   </div>
 </div>
 <script type="application/ld+json">

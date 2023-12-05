@@ -2,7 +2,7 @@
   <div class="product-notification pos-{{section.settings.notify_product_pos}}" data-time="{{section.settings.delay_time}}">
       <a class="closeNotify">
         <i class="mdi mdi-close" aria-hidden="true"></i>
-      </a>    
+      </a>
       <div class="product-suggest">
         <a class="product-image" href=""><img loading="lazy" src="" alt="img01"></a>
         <div class="column-right">
@@ -21,7 +21,7 @@
             {%- if block_product_id != blank -%}
             {% assign product = all_products[block_product_id] %}
             {%- unless check_product_id contains product.id -%}
-              <div class="data-product" data-id="{{ product.id }}" data-image="{{ product.featured_image.src | img_url: '85x' }}" data-url="{{ product.url | within: collection }}" data-title="{{ product.featured_image.alt }}" data-alt="{{ product.featured_image.alt }}" data-local="{{  block.settings.product_location }}" data-time="{{  block.settings.product_time }}"></div>    
+              <div class="data-product" data-id="{{ product.id }}" data-image="{{ product.featured_image.src | img_url: '85x' }}" data-url="{{ product.url | within: collection }}" data-title="{{ product.featured_image.alt }}" data-alt="{{ product.featured_image.alt }}" data-local="{{  block.settings.product_location }}" data-time="{{  block.settings.product_time }}"></div>
             {%- endunless -%}
             {%- endif -%}	
         {% endfor %}	

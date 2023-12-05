@@ -22,7 +22,7 @@
 {%- assign money_price = price | money -%}
 <div class="price{% if available == false %} price--sold-out{% endif %}{% if compare_at_price > price %} price--on-sale{% endif %}{% if variant.unit_price_measurement %} price--unit-available{% endif %}">
   {% if compare_at_price > price %}
-  <div class="sale-price">   
+  <div class="sale-price">
     <span class="product-price__price product-price__sale">{{ money_price }}</span>
     {% if settings.sale_show_percentage %}           
     <span class="discount-percentage">-{{ target.compare_at_price | minus: target.price | times: 100.0 | divided_by: target.compare_at_price | round }}%</span>

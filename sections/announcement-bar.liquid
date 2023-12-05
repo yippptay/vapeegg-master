@@ -10,13 +10,13 @@
 <div id="annoucementbar" class="announce-banner" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %}>
   <div class="container">
     <div class="announce-banner-content">
-      <div class="announce-content">          
+      <div class="announce-content">
         {% for block in section.blocks %}  
         <div id="announce-{{block.id}}" class="announce-cnt">
           {{ block.settings.announce_cnt }}
         </div>
         {% endfor %}
-      </div>    
+      </div>
     </div>
   </div>
 </div>

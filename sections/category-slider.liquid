@@ -6,16 +6,16 @@
   <div class="container"> 
     <div class="category_slider_content {% if section.settings.banner_display != blank %} banner_display{% endif %}"> 
       {% if section.settings.banner_display != blank %}
-      <div  class="ttcmscatbanner col-sm-2 col-xs-12">   
+      <div  class="ttcmscatbanner col-sm-2 col-xs-12">
         <a class="ttcatbanner-img" href="{% if section.settings.banner_image_link != blank %}{{ section.settings.banner_image_link}}{% else %}#{% endif %}">
           <img loading="lazy" src="{{  section.settings.banner_image | img_url: "master" }}" alt="banner-image">
-          <div class="banner-content">                                                          
+          <div class="banner-content">
             {% if section.settings.banner_subtitle1 != blank %}<div class="catsubtitle" href="#">{{ section.settings.banner_subtitle1}}</div>{% endif %}
             {% if section.settings.banner_title1 != blank %}<div class="cattitle">{{ section.settings.banner_title1}}</div>{% endif %}
             {% if section.settings.banner_pricedesc1 != blank %}<div class="catpricedesc">{{ section.settings.banner_pricedesc1}}</div>{% endif %}
             {% if section.settings.banner_price1 != blank %}<div class="catprice">{{ section.settings.banner_price1}}</div>{% endif %}                  
           </div>
-        </a>            
+        </a>
         <style>
           .category-slider .category_slider_content .ttcatbanner-img .cattitle{
             color:{{section.settings.banner_title_clr1}};
@@ -29,34 +29,52 @@
             color:{{section.settings.banner_price_clr1}};
           }
           .category-slider .category_slider_content .ttcatbanner-img .catdesc{ background:{{ section.settings.desc_bgclr }};}
-        </style>     
+        </style>
       </div>
       {% endif %}
       {% if section.blocks.size > 0 %}
       <div class="cat-slider-banner-content col-sm-10 col-xs-10">
-        <div class="tab-inner tab-content tab-container{% if section.settings.product_rows %} two_rows{% endif %} {{ settings.product_hover_btn }}">   
+        <div class="tab-inner tab-content tab-container{% if section.settings.product_rows %} two_rows{% endif %} {{ settings.product_hover_btn }}">
           <div class="box-heading tthometab-title col-sm-2 col-xs-2 cattab_{{ section.id }}">
             <div class="ttcategoryslider-tab">
               <div class="tab-title">{{ section.settings.tabtitle | escape }}</div>
-              <ul id="tab_product_{{ section.id }}" class="nav nav-tabs">  
-                {%  assign block_size = 1 %} 
-                {% for block in section.blocks %} 
+
+              <ul id="tab_product_{{ section.id }}" class="nav nav-tabs">
+                {% assign block_size = 1 %}
+                {% for block in section.blocks %}
                 {%- assign collection = collections[block.settings.collection] -%}
-                <li class="tabs{% if block_size == 1 %} active{% endif %}"><a href="#tabs-{{ block.id }}" data-target="#tabs-{{ block.id }}" data-toggle="tab" aria-expanded="false">{% if block.settings.cat_sub_menu_icon != blank %}<span id="menuicon-{{ block.id }}" class="icon"></span>{% endif %}
-                  {{ block.settings.title }}</a></li>               
+                <li class="tabs{% if block_size == 1 %} active{% endif %}"><a href="#tabs-{{ block.id }}" onClick="(function(){
+                  document.getElementById('view-all-category-button').innerHTML = 'View All {{ block.settings.title }}';
+                  document.getElementById('view-all-category-button').href = '{{ collection.url }}';
+                  return false;
+              })();return false;" data-target="#tabs-{{ block.id }}" data-toggle="tab" aria-expanded="false">{% if block.settings.cat_sub_menu_icon != blank %}<span id="menuicon-{{ block.id }}" class="icon"></span>{% endif %}
+                  {{ block.settings.title }}</a></li>
                 {% assign block_size = block_size | plus: 1 %}
-                <style> .ttcategoryslider-tab .nav-tabs span#menuicon-{{ block.id }}.icon{background-image:url({{ block.settings.cat_sub_menu_icon | img_url: '18x18'}});-webkit-background-image:url({{ block.settings.cat_sub_menu_icon | img_url: '18x18'}});background-repeat: no-repeat;}</style>   
-                {% endfor %} 
-              </ul>          
-              {% comment %} <a class="view-all" href="{% if section.settings.view_url != blank %}{{ section.settings.view_url }} {% else %}#{% endif %}"><img src="{{ section.settings.viewall_icon | img_url:'master' }}" alt="viewall-icon" /><span>{{ section.settings.view_btn }}</span></a>  {% endcomment %}
+                <style> .ttcategoryslider-tab .nav-tabs span#menuicon-{{ block.id }}.icon{background-image:url({{ block.settings.cat_sub_menu_icon | img_url: '18x18'}});-webkit-background-image:url({{ block.settings.cat_sub_menu_icon | img_url: '18x18'}});background-repeat: no-repeat;}</style>
+                {% endfor %}
+              </ul>
+
+              {% for block in section.blocks %}
+
+                {% if forloop.index0 == 0 %}
+
+                  {% assign collection = collections[block.settings.collection] %}
+                  <div id="tabs-{{ block.id }}-js" data-id="tabs-{{ block.id }}-js" data-col="tabs-{{ block.id }}-js">
+                    <a class="view-all" id="view-all-category-button">View All {{ block.settings.title }}</a>
+                  </div>
+
+                {% endif %}
+
+              {% endfor %}
+
             </div>
-          </div> 
-          {%  assign block_size = 1 %}  
+          </div>
+          {% assign block_size = 1 %}
           {% for block in section.blocks %}
-          {%- assign collection = collections[block.settings.collection] -%}   
-          {%  assign cnt = 1 %}  
-          {%-  assign foundpro = collection.products.count -%} 
-          <div id="tabs-{{ block.id }}" data-id="tabs-{{ block.id }}" data-col="tabs-{{ block.id }}" class="contents tab-pane fade cat-product_{{ section.settings.cat_product_col }} {% if block_size == 1 %} in active{% endif %}">                    
+          {% assign collection = collections[block.settings.collection] %}
+          {% assign cnt = 1 %}
+          {% assign foundpro = collection.products.count -%}
+          <div id="tabs-{{ block.id }}" data-id="tabs-{{ block.id }}" data-col="tabs-{{ block.id }}" class="contents tab-pane fade cat-product_{{ section.settings.cat_product_col }} {% if block_size == 1 %} in active{% endif %}">
             <div class="cat-slider{% if section.settings.banner_display != blank %} col-sm-10 col-xs-10{% else %}{% endif %}">
               <div class="{{ block.settings.title | handle }}-{{ block.id }} {{ block.settings.title | handle }}-wrap owl-carousel owl-theme">
                 {% for product in collection.products limit:product_limit %}
@@ -106,6 +124,7 @@
   .category-slider .tthometab-title.box-heading .ttcategoryslider-tab .view-all{color: {{section.settings.tab_title_clr}};}
   .category-slider .cattab_{{ section.id }} .nav-tabs li:hover a,.category-slider .cattab_{{ section.id }} .nav-tabs li.active a{color:{{section.settings.tab_hvr_clr}}};
 </style>
+
 {% schema %}
 {
 "name": "category slider",

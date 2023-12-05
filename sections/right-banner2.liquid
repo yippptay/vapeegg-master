@@ -8,9 +8,11 @@
   <div class="row">
     {% if section.settings.banner_image1 != blank %}
     <div class="ttrightbanner banner1 col-sm-6 col-md-12 col-xs-6"">
-      <a href="{{ section.settings.banner_link1 }}">
+
+      {% if section.settings.banner_link1 != blank %}<a href="{{ section.settings.banner_link1 }}">{% endif %}
+
         {% if section.settings.banner_image1 != blank %}
-        <img loading="lazy" src="{{ section.settings.banner_image1 | img_url: "master"}}" alt="banner_image1">
+        <img loading="lazy" src="{{ section.settings.banner_image1 | img_url: "master"}}" alt="banner_image1" style="border-radius: 5px;">
         {% else %}{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}{% endif %}      
         <div class="ttbanner-content content-{{ section.settings.text1_position }} col-md-6 col-sm-4">
           <div class="banner-inner">
@@ -19,14 +21,18 @@
             <div class="ttbaaner-pricedesc">{{ section.settings.banner_pricedesc1 }}<span class="price">{{ section.settings.banner_price1 }}</span></div>
           </div>
         </div>
-      </a>
+
+        {% if section.settings.banner_link1 != blank %}</a>{% endif %}
+
     </div>
     {% endif %}
     {% if section.settings.banner_image2 != blank %} 
     <div class="ttrightbanner banner2 col-sm-6 col-md-12 col-xs-6"">
-      <a href="{{ section.settings.banner_link2 }}">
+
+      {% if section.settings.banner_link2 != blank %}<a href="{{ section.settings.banner_link2 }}">{% endif %}
+
         {% if section.settings.banner_image2 != blank %}
-        <img loading="lazy" src="{{ section.settings.banner_image2 | img_url: "master"}}" alt="banner_image2">
+        <img loading="lazy" src="{{ section.settings.banner_image2 | img_url: "master"}}" alt="banner_image2" style="border-radius: 5px;">
         {% else %}{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}{% endif %}      
         <div class="ttbanner-content content-{{ section.settings.text2_position }} col-md-6 col-sm-4">
           <div class="banner-inner">
@@ -35,7 +41,9 @@
             <div class="ttbaaner-pricedesc">{{ section.settings.banner_pricedesc2 }}<span class="price">{{ section.settings.banner_price2 }}</span></div>
           </div>
         </div>
-      </a>
+
+      {% if section.settings.banner_link2 != blank %}</a>{% endif %}
+
     </div>
     {% endif %}
   </div>
@@ -129,7 +137,7 @@
   {
     "type": "url",
     "id": "banner_link2",
-    "label": "Banner link Top"
+    "label": "Banner link Bottom"
   },
   {
   "type": "text",

@@ -1704,7 +1704,7 @@ h5.tt-toggle-accordion.active:before,  h5.tt-toggle.active:before  {
 }
 .template-index .main-content .shopify-section.index-section  {
   float:  left;
-  margin:  0 0 50px;
+  margin:  0 0 60px;
   width:  100%;
 }
 @media only screen and (max-width: 991px)  {
@@ -3147,7 +3147,7 @@ label.error  {
 .section-header  {
   float:  left;
   width:  auto;
-  margin:  0 0 15px;
+  margin:  0 0 30px;
 }
 .section-header .form-horizontal  {
   display:  inline-block;
@@ -4178,10 +4178,10 @@ p.bottom-indent  {
   width:  auto;
   display:  inline-block;
   vertical-align:  top;
-  font:  600 20px/22px var(--font-stack-header);
-    margin:  0;
-    color:  var(--color-text);
-      }
+  font:  600 26px/22px var(--font-stack-header);
+  margin:  0;
+  color:  var(--color-text);
+}
 h2.tt-pagetitle  {
   float:  left;
   width:  100%;
@@ -7801,7 +7801,7 @@ ul.no-bullets.top-products.owl-carousel.owl-loaded.owl-drag  {
 .related-products-container  {
   float:  left;
   width:  100%;
-  margin:  0 0 30px;
+  margin:  60px 0;
 }
 .hover_style3 .related-products-container .owl-stage-outer  {
   margin:  0 0 -45px;
@@ -10275,7 +10275,7 @@ form.search-bar:hover .btn .icon.icon-search  {
   border-color:  var(--color-border);
     }
 .errors ul  {
-  list-style:  disc inside;
+  list-style:  none;
 }
 .form-success  {
   color:  var(--successGreen);
@@ -10284,9 +10284,10 @@ form.search-bar:hover .btn .icon.icon-search  {
       }
 .form-error,  .errors  {
   color:  var(--errorRed);
-    background-color:  #faebeb;
-    border-color:  var(--errorRed);
-      }
+  background-color:  #faebeb;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  }
 .ajaxify-drawer  {
   position:  absolute;
   top:  0;
@@ -13274,6 +13275,7 @@ body .compare-model .max_compare  {
   color:  #dd2935;
   padding:  0;
   font-size:  14px;
+  font-weight: 700;
   line-height:  16px;
 }
 .grid-view-item .visually-hidden  {
@@ -13555,6 +13557,7 @@ body .compare-model .max_compare  {
 }
 #recently-viewed-products-wrap .product-container  {
   float:  left;
+  margin: 0 0 15px;
   width:  100%;
 }
 .product-arrows  {
@@ -17277,10 +17280,8 @@ cart-note.cart__note.field textarea  {
   width: auto;  
 }
 .login-page .grid .grid-item.create_account_wrap a{
-  padding: 8px 14px;
   line-height: 36px;
-  border: 2px solid var(--color-btn-primary);
-    }
+}
 .create_account_wrap.btn a#customer_register_link  {
   color:  var(--color-btn-primary-text);
     }
@@ -20064,6 +20065,7 @@ div#shopify-section-sidebar-promoimage  {
 }
  .product-wrapper  {
   margin:  0 0 15px;
+  padding: 15px;
 }
 @media (min-width: 992px)  {
    .style2 .product-wrapper .btn_wrapper  {
@@ -20267,7 +20269,7 @@ div#shopify-section-sidebar-promoimage  {
 
 /*=================bestseller product============================*/
 .template-index .main-content .shopify-section.index-section.bestseller-collection .slider-bestproduct-inner{
-  padding: 60px 0;
+  padding: 90px 0;
 }
 .slider-bestproduct-wrap{
   float:left;
@@ -20501,7 +20503,7 @@ div#shopify-section-sidebar-promoimage  {
     font-size: 11px;
   }
   .template-index .main-content .shopify-section.index-section.bestseller-collection .slider-bestproduct-inner {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 }
 @media (max-width: 767px)  {
@@ -20512,7 +20514,7 @@ div#shopify-section-sidebar-promoimage  {
     padding:  10px 10px 0;
   }
   .template-index .main-content .shopify-section.index-section.bestseller-collection .slider-bestproduct-inner {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 }
 @media (max-width: 480px)  {

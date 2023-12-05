@@ -24,7 +24,7 @@
 
 <div class="price{% if available == false %} price--sold-out{% endif %}{% if compare_at_price > price %} price--on-sale{% endif %}{% if variant.unit_price_measurement %} price--unit-available{% endif %}">
   {% if compare_at_price > price %}
-  <div class="sale-price">   
+  <div class="sale-price">
     {% if settings.sale_show_percentage %}           
     <span class="discount-percentage">Save -{{ target.compare_at_price | minus: target.price | times: 100.0 | divided_by: target.compare_at_price | round }}%</span>
     {% endif %}

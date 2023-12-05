@@ -1,10 +1,10 @@
-<div class="widget widget_latest_blog_listing" data-section-id="{{ section.id }}" >  
+<div class="widget widget_latest_blog_listing" data-section-id="{{ section.id }}" >
   {% if section.settings.title != blank %}
   <h4>{{ section.settings.title | escape }}</h4>
   {%- assign blog = blogs[section.settings.blog] -%}
   {% unless blog.empty? %}
   <div class="grid grid--blog">
-    <div id="blog_sidebar" class="grid-blog">  
+    <div id="blog_sidebar" class="grid-blog">
       {% for article in blog.articles limit: section.settings.post_limit %}
       <div class="blog_sidebar_item">
         <div class="blog-content col-xs-12 padding_0">

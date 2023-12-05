@@ -3,7 +3,7 @@
 {%- assign grid_image_width = '600x600' -%}
 {%- assign viewed_products_item = 6 -%}
 <div id="recently-viewed-products-wrap" class="collection clearfix" style="display:none">
-  <div class="section-header text-center">   
+  <div class="section-header text-center">
     <h2 class="tt-title">{{ 'products.general.recently_products_title' | t }}</h2></div>
   <div id="recently-viewed-products" class="collection recently-collection clearfix owl-carousel owl-theme {{ settings.product_hover_btn }}">
   </div>
@@ -13,7 +13,7 @@
   <script id="recently-viewed-product-template"  type="text/x-jquery-tmpl">
           <div id="product-${handle}" class="product product-layouts item-row col-xs-12">
             <div class="product-container" itemtype="https://schema.org/Product">
-              <div class="product-wrapper">              
+              <div class="product-wrapper">
                   <div class="thumbs product-thumb">
                     <a href="${url}">
                       <img loading="lazy" src="${Shopify.Products.resizeImage(featured_image, "376x489")}" alt="featured-image"/>
@@ -26,7 +26,7 @@
     </div>
           {{/if}}
     </div>
-                  <div class="product-description">      
+                  <div class="product-description">
                       <span class="h4 grid-view-item__title">
                       <a class="grid-view-item__link grid-link__title" href="${url}">${title}</a>
     </span>

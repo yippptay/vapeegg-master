@@ -279,7 +279,7 @@
                     // check if the iframe was created with the ugly hack
                     // and perform another ugly hack out of neccessity
                     window.frames["printIframe"].focus();
-                    $head.append("<script>  window.print(); </s" + "cript>");
+                    $head.append("<script>window.print(); </s" + "cript>");
                 } else {
                     // proper method
                     if (document.queryCommandSupported("print")) {

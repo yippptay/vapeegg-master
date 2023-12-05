@@ -4,7 +4,7 @@
     <div class="collection_template">
       <div class="grid">
         {% if settings.Collection_type =='show_category' %}
-        <div class="grid-uniform list-collection-products {{ settings.Collection_type }}">  
+        <div class="grid-uniform list-collection-products {{ settings.Collection_type }}">
           {% if settings.use_custom_list_collection %}
           {% assign collection = link.object %}      
           {% else %}
@@ -40,7 +40,7 @@
                     <p class="collection-count">{{ collection.all_products_count }} <span>{{ 'cart.general.items' | t }}</span></p>
                   </div>
                 </div>
-              </div>                                  
+              </div>
             </div>
           </div>
           {% endunless %}
@@ -48,7 +48,7 @@
           {% endif %}  
         </div>
         {% else %}
-        <div class="list-collection-products {{ settings.Collection_type }} owl-carousel">  
+        <div class="list-collection-products {{ settings.Collection_type }} owl-carousel">
           {%- for collection in collections -%}{% comment %}EasylockdownFilterBegin{% endcomment %}{% capture easylockdownFilter %}{% render 'easylockdown_filter_collections' with collection, easylockdownRender: true, easylockdownItemSelectorOff: easylockdownItemSelectorOff %}{% endcapture %}{% assign easylockdownFilter = easylockdownFilter | strip %}{% if easylockdownFilter == 'continue' %}{% continue %}{% else %}{{ easylockdownFilter }}{% endif %}{% comment %}EasylockdownFilterEnd{% endcomment %}
           {% unless collection.handle == 'frontpage' %}
           {% render 'collection-lists' %}

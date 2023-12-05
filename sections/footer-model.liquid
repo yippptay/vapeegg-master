@@ -163,11 +163,11 @@
                     </div>
                   </li>
 
-                  <li class="email">                      
+                  <li class="email">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
                       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                     <span class="email-address"><a href="mailto:{{ section.settings.contact_email }}">{{ section.settings.contact_email }}</a></span></li>
-                </ul>                                  
+                </ul>
                 <div class=" dwld-app">
                   {% if section.settings.dwld_app1 != blank %}
                   <a class="app-img" href="{{section.settings.dwld_app_url1}}"><img loading="lazy" src="{{  section.settings.dwld_app1 | img_url: "master" }}" alt="dwld-app" /></a>
@@ -226,7 +226,7 @@
           </div>
         {% if section.settings.display_security %}
           <div class="bottom-footer-section">
-            <div class="cms-security">       
+            <div class="cms-security">
               {% if section.settings.security_img1 != blank %}
               <a class="security-img" href="#"><img loading="lazy" src="{{ section.settings.security_img1 | img_url: "master" }}" alt="security-image" /></a>
               {% endif %}
@@ -234,10 +234,10 @@
               <a class="security-img" href="#"><img loading="lazy" src="{{ section.settings.security_img2 | img_url: "master"}}" alt="security-image" /></a>
               {% endif %}
               {% if section.settings.security_img3 != blank %}
-              <a class="security-img" href="#"><img loading="lazy" src="{{ section.settings.security_img3 | img_url: "master"}}" alt="security-image" /></a>    
+              <a class="security-img" href="#"><img loading="lazy" src="{{ section.settings.security_img3 | img_url: "master"}}" alt="security-image" /></a>
               {% endif %}
               {% if section.settings.security_img4 != blank %}       
-              <a class="security-img" href="#"><img loading="lazy" src="{{ section.settings.security_img4 | img_url: "master"}}" alt="security-image" /></a>      
+              <a class="security-img" href="#"><img loading="lazy" src="{{ section.settings.security_img4 | img_url: "master"}}" alt="security-image" /></a>
               {% endif %}
             </div>
           </div>

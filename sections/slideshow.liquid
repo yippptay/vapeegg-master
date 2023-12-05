@@ -14,7 +14,7 @@
 
         {% if block.settings.show_video == true %}
         <div id="popup_toggle">
-          <div class="videoimg">  
+          <div class="videoimg">
             <a href="{% if block.settings.image_link != blank %}{{ block.settings.image_link}}{% else %}#{% endif %}"><img height="430" width="980" src="{{ block.settings.image | img_url: "master" }}" alt="slider-image" /></a>
             <div class="slider-content-wrap content-{{ block.settings.text_position }} effect_{{ block.settings.text_effect }} col-sm-5"> 
               {% if block.settings.desc != blank %}<div class="slider-desc" style="color:{{ block.settings.desc_color }}">{{ block.settings.desc }}</div>{% endif %}          
@@ -29,7 +29,7 @@
               </div>
               {% endif %}
             </div>
-            <span class="play-icone"><i class="mdi mdi-play-circle" aria-hidden="true"></i></span>       
+            <span class="play-icone"><i class="mdi mdi-play-circle" aria-hidden="true"></i></span>
           </div>
         </div>
         <div class="popup_overlay">

@@ -1,9 +1,9 @@
 {% if section.blocks.size > 0 %} 
-<div id="tt-topoffer" class="block_content" data-aos="fade-up">    
+<div id="tt-topoffer" class="block_content" data-aos="fade-up">
   <div class="ttofferblock">
     {% for block in section.blocks %}      
     <div id="topoffer-{{block.id}}" class="top-offer">
-      <a class="topoffer-img" href="{{block.settings.topoffer_img_url }}">                
+      <a class="topoffer-img" href="{{block.settings.topoffer_img_url }}">
         <img loading="lazy" height="186" width="324" src="{{ block.settings.topoffer_img  | img_url: "324x186" }}" alt="offer-img" />
       </a>
       <div class="topoffer-content">

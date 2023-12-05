@@ -175,7 +175,7 @@
       "type": "right-banner2",
       "settings": {
         "banner_image1": "shopify:\/\/shop_images\/Layer_1_1.png",
-        "banner_link1": "",
+        "banner_link1": "shopify:\/\/products\/smok-morph-3-230w-mod",
         "banner_title1": "",
         "title_color1": "#313c46",
         "banner_subtitle1": "",
@@ -186,7 +186,7 @@
         "price_color1": "#f04706",
         "text1_position": "right",
         "banner_image2": "shopify:\/\/shop_images\/Layer_5.png",
-        "banner_link2": "",
+        "banner_link2": "shopify:\/\/collections\/vaporesso-eco-nano",
         "banner_title2": "",
         "title_color2": "#313c46",
         "banner_subtitle2": "",
@@ -205,6 +205,7 @@
           "type": "s_text",
           "settings": {
             "service_icon": "shopify:\/\/shop_images\/local_shipping_FILL0_wght700_GRAD200_opsz48.png",
+            "cms_link": "",
             "title": "Free Shipping",
             "desc": "on orders over $80"
           }
@@ -213,14 +214,16 @@
           "type": "s_text",
           "settings": {
             "service_icon": "shopify:\/\/shop_images\/sell_FILL0_wght700_GRAD200_opsz48.png",
-            "title": "15% Off",
-            "desc": "on first orders"
+            "cms_link": "",
+            "title": "Use Code \"NEWCX\"",
+            "desc": "15% off First Order"
           }
         },
         "2f8706c7-f8c9-4d09-9904-f1c06d130da0": {
           "type": "s_text",
           "settings": {
             "service_icon": "shopify:\/\/shop_images\/award_star_FILL0_wght700_GRAD200_opsz48.png",
+            "cms_link": "shopify:\/\/pages\/rewards",
             "title": "Vegg Rewards",
             "desc": "Earn points on every order"
           }
@@ -229,6 +232,7 @@
           "type": "s_text",
           "settings": {
             "service_icon": "shopify:\/\/shop_images\/live_help_FILL0_wght700_GRAD200_opsz48.png",
+            "cms_link": "shopify:\/\/pages\/customer-support",
             "title": "Online Support",
             "desc": "info@vapeegg.com"
           }
@@ -237,8 +241,9 @@
           "type": "s_text",
           "settings": {
             "service_icon": "shopify:\/\/shop_images\/finance_chip_FILL0_wght700_GRAD200_opsz48.png",
+            "cms_link": "",
             "title": "Exclusive Deals",
-            "desc": "when you sign up for our newsletter"
+            "desc": "Only on our Newsletter"
           }
         }
       },

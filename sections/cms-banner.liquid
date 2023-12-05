@@ -1,6 +1,6 @@
 {% if section.blocks.size > 0 %}
 <div class="ttcmsbanner" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %}>
-  <div class="container">  
+  <div class="container">
     <div class="row">
       <div class="cms-banner owl-carousel">
         {% for block in section.blocks %}        
@@ -25,10 +25,10 @@
             .cms-banner #cmsbanner-{{ block.id }}.banner .banner-content .price_desc {color: {{block.settings.price_desc_color }};}  
             .cms-banner #cmsbanner-{{ block.id }}.banner .banner-content .price {color: {{block.settings.price_color }};}  
           </style> 
-        </div>    
+        </div>
         {% endfor %}
       </div>
-    </div>    
+    </div>
   </div>
 </div>
 {% endif %}

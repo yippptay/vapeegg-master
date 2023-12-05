@@ -11,13 +11,13 @@
         {% if settings.category_image != blank %}
         <div class="category_img">
           <img loading="lazy" src="{{ settings.category_image | image_url }}"  alt="{{ collection.title | escape }}" display="block" width="auto" height="250" />
-        </div>   
+        </div>
         {% endif %}
         <h1 class="section-header__title text-left">{{ collection.title }}</h1>
         {% if enable_category_desc %}
         <div class="description">{{ collection.description }}</div>
         {% endif %} 
-      </div>      
+      </div>
       {% else %}
       <h1 class="section-header__title">{{ collection.title }}</h1>
       {% endif %}    
@@ -29,14 +29,14 @@
           {% if settings.collections_view_enable %}
           {% if settings.collection_sidebar_use == "full_width" %}
           {% if settings.collection_filter_pos == "left_filter" %}  
-          <a class="filter-left" href="#"><i class="mdi mdi-format-align-left"></i>Filter</a>   
+          <a class="filter-left" href="#"><i class="mdi mdi-format-align-left"></i>Filter</a>
           {% endif %}
           {% endif %}
-          <div class="view-mode filter-grid-list grid__item">   
-            <a class="grid active" id="grid-view" title="{{ 'collections.general.grid_view' | t }}"><span >{{ 'collections.general.grid_view' | t }}</span></a>  
+          <div class="view-mode filter-grid-list grid__item">
+            <a class="grid active" id="grid-view" title="{{ 'collections.general.grid_view' | t }}"><span >{{ 'collections.general.grid_view' | t }}</span></a>
             <a class="list" id="list-view" title="{{ 'collections.general.list_view' | t }}"><span>{{ 'collections.general.list_view' | t }}</span></a> 
             <a class="short-list" id="short-list-view" title="{{ 'collections.general.short_list_view' | t }}"><span>{{ 'collections.general.short_list_view' | t }}</span></a> 
-          </div>  
+          </div>
           {% endif %}
           {% if settings.collection_sidebar_use == "full_width" %}
           {% if settings.collection_filter_pos == "right_filter" %}  
@@ -127,7 +127,7 @@
               {% render 'sidebar-category', enable_sidecategory: section.settings.enable_sidecategory, linkedlist: section.settings.linkedlist, linkedlist_title: section.settings.linkedlist_title %}
               {% render 'facets', results: collection, collapse_on_larger_devices: section.settings.collapse_on_larger_devices, show_filter: section.settings.show_filter %}
               {% render 'promo-banner', show_promo_banner: section.settings.show_promo_banner, promo_img: section.settings.promo_img, promo_link: section.settings.promo_link %}
-            </div>                         
+            </div>
           </div>
         </div>
         {% endif %}

@@ -25,12 +25,12 @@
         {% if product.images.size > 0 %}  
         <div class="image product-thumb col-xs-4 col-sm-4 col-md-4 padding_0">
           <div class="product-img col-xs-12 padding_0 {{ settings.product_img_hover }}">
-            <a class="thumb product-t" href="{{ product.url | within: collection }}">                                          
-              <img loading="lazy" class="featured-image image_thumb" alt="featured product" src="{{ product.featured_image | product_img_url: pro_size }}">  
+            <a class="thumb product-t" href="{{ product.url | within: collection }}">
+              <img loading="lazy" class="featured-image image_thumb" alt="featured product" src="{{ product.featured_image | product_img_url: pro_size }}">
               
               {% if product.images.size > 1 %}
               {% if product.images.last %}
-                <img loading="lazy" class="image_thumb_swap" alt="featured product" src="{{ product.images.last | product_img_url: pro_size }}">  
+                <img loading="lazy" class="image_thumb_swap" alt="featured product" src="{{ product.images.last | product_img_url: pro_size }}">
               {% endif %}
               {% endif %}
             </a>
@@ -44,7 +44,7 @@
               {% endif %} 
               {% endif %} 
             {% if product.compare_at_price > product.price %}
-            <span class="sale on-sale-tag">{{ 'products.product.on_sale' | t }}</span>    
+            <span class="sale on-sale-tag">{{ 'products.product.on_sale' | t }}</span>
             {% endif %}
           </div>
         </div>

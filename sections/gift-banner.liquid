@@ -1,7 +1,7 @@
 <style>
   .gift-banner .title {color: {{section.settings.banner_title_color }};}
   .giftbanner{background:{{section.settings.bg_color }};}
-</style>    
+</style>
 <div class="gift-banner">
   <div class="title">{{ section.settings.banner_title }}</div>
   {% if section.settings.banner_img != blank %}
@@ -9,7 +9,7 @@
     <img loading="lazy" src="{{ section.settings.banner_img | img_url:"master" }}" alt="banner">
   </a>
   {% endif %}
-</div>  
+</div>
 {% schema %}
 {
 "name": "Gift Banner",

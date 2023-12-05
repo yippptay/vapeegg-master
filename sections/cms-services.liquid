@@ -7,24 +7,30 @@
   #ttcmsservices .ttcontent .service-desc{color: {{ section.settings.desc_color }};}
 </style>
 {% if section.blocks.size > 0 %} 
-<div id="ttcmsservices" class="ttservice" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %}>  
-  <div class="container">  
+<div id="ttcmsservices" class="ttservice" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %}>
+  <div class="container">
     <div class="block_content owl-carousel owl-theme" style="display: block;">
-      {% for block in section.blocks %}      
+      {% for block in section.blocks %}
       <div class="ttcontent">
-        <div class="service">
-          <div id="icon-{{ block.id }}" class="ttshipping_img service-icon">
-            <img loading="lazy" height="50px" width="50px" src="{{ block.settings.service_icon | img_url: "50x50"  }}" alt="service img" />
+
+        {% if block.settings.cms_link != blank %}<a href="{{ block.settings.cms_link }}"> {% endif %}
+
+          <div class="service">
+            <div id="icon-{{ block.id }}" class="ttshipping_img service-icon">
+              <img loading="lazy" height="50px" width="50px" src="{{ block.settings.service_icon | img_url: "50x50" }}" alt="service img" />
+            </div>
+            <div class="content">
+              <div class="service-title">{{  block.settings.title }}</div>
+              <div class="service-desc">{{  block.settings.desc }}</div>
+            </div>
           </div>
-          <div class="content">
-            <div class="service-title">{{  block.settings.title }}</div>
-            <div class="service-desc">{{  block.settings.desc }}</div>
-          </div>
-        </div>
-      </div>   
+
+        {% if block.settings.cms_link != blank %}</a>{% endif %}
+
+      </div>
       {% endfor %}
-    </div>   
-  </div>  
+    </div>
+  </div>
 </div>
 <style>
   .service-offer .offer-img{background:{{ section.settings.offer_bg }};}
@@ -75,6 +81,11 @@
 "id": "service_icon",
 "label": "Service Icon",
 "info": "Size: 65x65"
+},
+{
+  "type": "url",
+  "id": "cms_link",
+  "label": "Service Link"
 },
 {
 "type": "text",

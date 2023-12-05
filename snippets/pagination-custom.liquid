@@ -15,8 +15,8 @@ More information:
 {% if settings.collection_infinite_scroll %}
 {% if paginate.next %}
 <div class="infinite-scrolling {{ settings.collection_infinite_scroll }}">
-  <a href="{{ paginate.next.url }}" title="Load more..." class="btn next">{{ 'collections.general.show_more' | t }}</a>  
-  <a href="#" class="disabled btn" style="display:none" title="Load more...">{{ 'collections.general.no_more_product' | t }}</a>  
+  <a href="{{ paginate.next.url }}" title="Load more..." class="btn next">{{ 'collections.general.show_more' | t }}</a>
+  <a href="#" class="disabled btn" style="display:none" title="Load more...">{{ 'collections.general.no_more_product' | t }}</a>
 </div>
 {% endif %}
 {% else %}

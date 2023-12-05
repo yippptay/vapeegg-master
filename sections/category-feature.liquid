@@ -4,7 +4,7 @@
     <div class="category_feature_wrap">
       {% if section.settings.title != blank  %}
       <div class="section-header section-header--small">
-        <h2 class="tt-title" style="color:{{section.settings.title_color }}">{{ section.settings.title }}</h2>  
+        <h2 class="tt-title" style="color:{{section.settings.title_color }}">{{ section.settings.title }}</h2>
       </div>
       {% endif %}
       <div class="category_cms_feature_wrap">
@@ -23,32 +23,32 @@
             <li class='li_feature'>
               {% endif %}
               {% endif %}
-              <div id="cat-featured-{{ block.id }}" class="collection_cat_item col-xs-12">          
+              <div id="cat-featured-{{ block.id }}" class="collection_cat_item col-xs-12">
                 <a href="{{ collection.url }}">
                   <div class="collection_img">
-                    <img loading="lazy" src="{{ block.settings.image_1 | img_url: "master"  }}" alt="category featured" />                  
+                    <img loading="lazy" src="{{ block.settings.image_1 | img_url: "master"  }}" alt="category featured" />
                   </div> 
-                  <div class="tt-collection-content">                
+                  <div class="tt-collection-content">
                     <div class="collection_title" style="color:{{section.settings.category_text_color }}">{{ block.settings.collection_title }}</div> 
                     {% if section.settings.banner_display != blank %}
                     {% if block.settings.collection_cat_id1 or block.settings.collection_cat_id2 != blank %}
                     <p class="desc">{{ collection.all_products_count }} {{ 'cart.general.items' | t }}</p> 
                     {% endif %}  
                     {% endif %}  
-                  </div>                                           
+                  </div>
                 </a>
                 <a href="{{ collection2.url }}">
                   <div class="collection_img">
-                    <img loading="lazy" src="{{ block.settings.image_2 | img_url: "master"  }}" alt="category featured" />                
+                    <img loading="lazy" src="{{ block.settings.image_2 | img_url: "master"  }}" alt="category featured" />
                   </div>
-                  <div class="tt-collection-content">              
+                  <div class="tt-collection-content">
                     <div class="collection_title" style="color:{{section.settings.category_text_color }}">{{ block.settings.collection_title2 }}</div> 
                     {% if section.settings.banner_display != blank %}
                     {% if block.settings.collection_cat_id1 or block.settings.collection_cat_id2 != blank %}
                     <p class="desc">{{ collection2.all_products_count }} {{ 'cart.general.items' | t }}</p> 
                     {% endif %}
                     {% endif %}
-                  </div>                                      
+                  </div>
                 </a>
               </div>
 
@@ -70,19 +70,19 @@
           {% for block in section.blocks limit:category_limit %}  
           <ul>
             <li class='li_feature'>
-              <div id="cat-featured-{{ block.id }}" class="collection_cat_item col-xs-12">          
+              <div id="cat-featured-{{ block.id }}" class="collection_cat_item col-xs-12">
                 <a href="{{ collection.url }}">
                   <div class="collection_img">
-                    <img src="{{ block.settings.image_1 | img_url: "master"  }}" alt="category featured" />                  
+                    <img src="{{ block.settings.image_1 | img_url: "master"  }}" alt="category featured" />
                   </div> 
-                  <div class="tt-collection-content">                
+                  <div class="tt-collection-content">
                     <div class="collection_title" style="color:{{section.settings.category_text_color }}">{{ block.settings.collection_title }}</div> 
                     {% if section.settings.banner_display != blank %}
                     {% if block.settings.collection_cat_id1 or block.settings.collection_cat_id2 != blank  %}
                     <p class="desc">{{ collection.all_products_count }} {{ 'cart.general.items' | t }}</p> 
                     {% endif %}  
                     {% endif %}  
-                  </div>                                           
+                  </div>
                 </a>
               </div>
             </li>

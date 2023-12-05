@@ -4,7 +4,7 @@
 <div id="shopify-section-sidebar-category" class="shopify-section">
   <div class="widget widget_product_categories">
     {% if linkedlist_title %}
-    <h3>{{ linkedlist_title }}</h3>  
+    <h3>{{ linkedlist_title }}</h3>
     {% endif %}
     {% if linklists[sidebar_linklist].links.size > 0 %}
     <ul class="product-categories dt-sc-toggle-frame-set">
@@ -26,14 +26,14 @@
               <li><a href="{{ child_link.url }}">{{ child_link.title  | split: '[' | first | escape }}</a></li>
               {% endfor %}
             </ul>
-            <span class="dt-menu-expand">+</span>   
+            <span class="dt-menu-expand">+</span>
           </li>
           {% else %}
           <li class="cat-item cat-item-39 cat-parent"><a href="{{ child_link.url }}">{{ child_link.title  | split: '[' | first | escape }}</a></li>
           {% endif %}
           {% endfor %}
         </ul>
-        <span class="dt-menu-expand">+</span>              
+        <span class="dt-menu-expand">+</span>
       </li>
       {% else %}
       <li class="cat-item cat-item-39 cat-parent">

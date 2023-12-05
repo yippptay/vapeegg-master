@@ -9,7 +9,7 @@
   {% assign has_dropdown = true %}
   <li class="menu-item-depth-0 site-nav--has-dropdown{% unless template.name == 'index' %}{% if link.active %} site-nav--open-dropdown{% endif %}{% endunless %}" aria-haspopup="true">
     <a href="{{ link.url }}" class="site-nav__linkdrop site-nav__label icon-fallback-text {% if link.active %} site-nav--active{% endif %}">{{ link.title }}
-    </a>   
+    </a>
     <span class="mobile-nav__sublist-trigger">
       <span class="mobile-nav__sublist-expand">
         <i class="mdi mdi-chevron-down" aria-hidden="true"></i>

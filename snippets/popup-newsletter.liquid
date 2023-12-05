@@ -13,9 +13,9 @@
         </div>
           {% endif %}
           {% if settings.popup_newsletter_form != blank %}
-        <div class="modal-newsletter col-sm-6">          
-          <div class="title">{{ settings.newsletter_title }}</div>  
-          <div class="desc">{{ settings.popup_newsletter_description }}</div>        
+        <div class="modal-newsletter col-sm-6">
+          <div class="title">{{ settings.newsletter_title }}</div>
+          <div class="desc">{{ settings.popup_newsletter_description }}</div>
           {% form 'customer' %}
      
       {% if form.posted_successfully? %}
@@ -25,7 +25,7 @@
           
         <p class="note form-success">{{ 'general.newsletter_form.confirmation' | t }}</p>
           <span class="input-group-btn">
-            <button type="submit" class="btn icon-fallback-text" name="commit" id="subscribe" aria-label="Name">             
+            <button type="submit" class="btn icon-fallback-text" name="commit" id="subscribe" aria-label="Name">
               <span class="subscribe">{{ 'general.newsletter_form.submit' | t }}</span>
             </button>
           </span>
@@ -37,7 +37,7 @@
           
      {{ form.errors | default_errors }}
           <span class="input-group-btn">
-            <button type="submit" class="btn icon-fallback-text" name="commit" id="subscribe" aria-label="Name">              
+            <button type="submit" class="btn icon-fallback-text" name="commit" id="subscribe" aria-label="Name">
               <span class="subscribe">{{ 'general.newsletter_form.submit' | t }}</span>
             </button>
           </span>
@@ -79,9 +79,9 @@
               </a>
               {% endif %}
             </div>
-        </div>  
+        </div>
           {% endif %}   
-      </div>   
+      </div>
     </div>
   </div>
 </div> 
