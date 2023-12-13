@@ -13240,28 +13240,28 @@ body .compare-model .max_compare  {
   border:  none;
 }
 .product-wrapper .sold-out-tag  {
-  position:  absolute;
-  height:  36px;
-  width:  100%;
-  background:  #fff;
-  right:  0;
-  left:  0;
-  top:  0;
-  bottom:  0;
-  margin:  auto;
-  transition:  all 400ms ease-in-out 0s;
-  -webkit-transition:  all 400ms ease-in-out 0s;
-  -moz-transition:  all 400ms ease-in-out 0s;
-  -o-transition:  all 400ms ease-in-out 0s;
-  -ms-transition:  all 400ms ease-in-out 0s;
-  display:  inline-flex;
-  align-items:  center;
-  justify-content:  center;
-  box-shadow:  0 0 5px rgba(0,  0,  0,  0.1);
-  -webkit-box-shadow:  0 0 5px rgba(0,  0,  0,  0.1);
-  -moz-box-shadow:  0 0 5px rgba(0,  0,  0,  0.1);
-  -ms-box-shadow:  0 0 5px rgba(0,  0,  0,  0.1);
-  -o-box-shadow:  0 0 5px rgba(0,  0,  0,  0.1);
+  position:             absolute;
+  height:               36px;
+  width:                100%;
+  background:         #fff;
+  right:                0;
+  left:                 0;
+  top:                  0;
+  bottom:               0;
+  margin:               auto;
+  transition:           all 250ms ease-in-out 0s;
+  -webkit-transition:   all 250ms ease-in-out 0s;
+  -moz-transition:      all 250ms ease-in-out 0s;
+  -o-transition:        all 250ms ease-in-out 0s;
+  -ms-transition:       all 250ms ease-in-out 0s;
+  display:              inline-flex;
+  align-items:          center;
+  justify-content:      center;
+  box-shadow:           0 0 5px rgba(0,  0,  0,  0.1);
+  -webkit-box-shadow:   0 0 5px rgba(0,  0,  0,  0.1);
+  -moz-box-shadow:      0 0 5px rgba(0,  0,  0,  0.1);
+  -ms-box-shadow:       0 0 5px rgba(0,  0,  0,  0.1);
+  -o-box-shadow:        0 0 5px rgba(0,  0,  0,  0.1);
 }
 .product-wrapper:hover .sold-out-tag  {
   opacity:  0;
@@ -13388,24 +13388,25 @@ body .compare-model .max_compare  {
   font-size:  14px;
 }
 .product-price__sale-label,  .product-wrapper .custom_label  {
-  position:  absolute;
-  right:  auto;
-  left:  -25px;
-  top:  30px;
-  bottom:  auto;
-  color:  #444;
-  font-size:  13px;
-  line-height:  20px;
-  opacity:  0;
-  -moz-opacity:  0;
-  -khtml-opacity:  0;
-  -webkit-opacity:  0;
-  visibility:  hidden;
-  transition:  all 400ms ease-in-out 0s;
-  -webkit-transition:  all 400ms ease-in-out 0s;
-  -moz-transition:  all 400ms ease-in-out 0s;
-  -o-transition:  all 400ms ease-in-out 0s;
-  -ms-transition:  all 400ms ease-in-out 0s;
+  position:             absolute;
+  right:                auto;
+  left:                 -25px;
+  top:                  30px;
+  bottom:               auto;
+  color:              #ff0000;
+  font-size:            14px;
+  font-weight:          700;
+  line-height:          20px;
+  opacity:              0;
+  -moz-opacity:         0;
+  -khtml-opacity:       0;
+  -webkit-opacity:      0;
+  visibility:           hidden;
+  transition:           all 250ms ease-in-out 0s;
+  -webkit-transition:   all 250ms ease-in-out 0s;
+  -moz-transition:      all 250ms ease-in-out 0s;
+  -o-transition:        all 250ms ease-in-out 0s;
+  -ms-transition:       all 250ms ease-in-out 0s;
 }
 .product-wrapper:hover .product-price__sale-label  {
   opacity:  1;
@@ -20064,8 +20065,8 @@ div#shopify-section-sidebar-promoimage  {
   margin:  0;
 }
  .product-wrapper  {
-  margin:  0 0 15px;
-  padding: 15px;
+  /* margin:  0 0 15px; */
+  padding: 5px;
 }
 @media (min-width: 992px)  {
    .style2 .product-wrapper .btn_wrapper  {

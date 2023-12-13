@@ -924,7 +924,7 @@ $(window).scroll(function(){
         items: 1
       },
       620: {
-        items: 2
+        items: 2,
       },
       1200: {
         items: 2

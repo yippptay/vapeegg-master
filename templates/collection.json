@@ -4,8 +4,8 @@
       "type": "collection",
       "settings": {
         "enable_sidecategory": true,
-        "linkedlist": "main-menu",
-        "linkedlist_title": "Category",
+        "linkedlist": "e-liquid-dropdown-menu",
+        "linkedlist_title": "Collections",
         "show_filter": true,
         "collapse_on_larger_devices": false,
         "enable_sorting": true,

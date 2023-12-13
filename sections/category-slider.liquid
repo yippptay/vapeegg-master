@@ -60,7 +60,7 @@
 
                   {% assign collection = collections[block.settings.collection] %}
                   <div id="tabs-{{ block.id }}-js" data-id="tabs-{{ block.id }}-js" data-col="tabs-{{ block.id }}-js">
-                    <a class="view-all" id="view-all-category-button">View All {{ block.settings.title }}</a>
+                    <a class="view-all" id="view-all-category-button" href="{{ collection.url }}">View All {{ block.settings.title }}</a>
                   </div>
 
                 {% endif %}
@@ -122,7 +122,7 @@
   .category-slider .cattab_{{ section.id }} ul li a{color:{{section.settings.tab_clr}};}
   .category-slider .tthometab-title.box-heading .ttcategoryslider-tab .tab-title ,  
   .category-slider .tthometab-title.box-heading .ttcategoryslider-tab .view-all{color: {{section.settings.tab_title_clr}};}
-  .category-slider .cattab_{{ section.id }} .nav-tabs li:hover a,.category-slider .cattab_{{ section.id }} .nav-tabs li.active a{color:{{section.settings.tab_hvr_clr}}};
+  .category-slider .cattab_{{ section.id }} .nav-tabs li:hover a,.category-slider .cattab_{{ section.id }} .nav-tabs li.active a{color:{{section.settings.tab_hvr_clr}}; font-weight: 800;};
 </style>
 
 {% schema %}

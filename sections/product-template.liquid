@@ -333,7 +333,16 @@
                             <span class="outstock"> {{ 'products.product.out_of_stock' | t }}</span>
                           </span>
                           {% for variant in product.variants %}
-                          <span class="hide" id="pvr-{{ variant.id }}" data-id="{{variant.inventory_quantity}}">{{variant.inventory_quantity}}</span>
+                            <span class="hide" id="pvr-{{ variant.id }}" data-id="{{ variant.inventory_quantity }}">{{ variant.inventory_quantity }}</span>
+                            <script>
+                              if(parseInt({{ variant.inventory_quantity }}) <= 0)
+                              {
+                                document.addEventListener("DOMContentLoaded", function(event)
+                                {
+                                  document.getElementById('variant-option-{{ forloop.index0 }}').style.color = "#CCC";
+                                });
+                              }
+                            </script>
                           {% endfor %}
                           {% endif %}
                         </p>
@@ -400,9 +409,9 @@
                                       form="product-form-{{ section.id }}"
                                       >
                                 {%- for value in option.values -%}
-                                <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
-                                  {{ value }}
-                                </option>
+                                  <option id="variant-option-{{ forloop.index0 }}" value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
+                                    {{ value }}
+                                  </option>
                                 {%- endfor -%}
                               </select>
                             </div>
@@ -682,10 +691,10 @@
                       <li><a data-toggle="tab"  href="#tab-2">Flavors</a></li>
                     {% endif %}
                     {% if product.metafields.custom.type %}
-                      <li><a data-toggle="tab"  href="#tab-2">Type</a></li>
+                      <li><a data-toggle="tab"  href="#tab-3">Type</a></li>
                     {% endif %}
-                    {% if product.metafields.custom.colors %}
-                      <li><a data-toggle="tab"  href="#tab-2">Colors</a></li>
+                    {% if product.metafields.custom.color %}
+                      <li><a data-toggle="tab"  href="#tab-4">Colors</a></li>
                     {% endif %}
                   </ul>
   
@@ -738,6 +747,7 @@
                       </div>
       
                     </div>
+                    
                     {% if product.metafields.custom.flavors %}
                       <div id="tab-2" class="tab-pane fade">
                         <ul id="flavors-list" style="list-style: none;">
@@ -751,12 +761,13 @@
                         </ul>
                       </div>
                     {% endif %}
+
                     {% if product.metafields.custom.type %}
-                      <div id="tab-2" class="tab-pane fade">
+                      <div id="tab-3" class="tab-pane fade">
                         <ul id="types-list" style="list-style: none;">
                           <div class="row">
                             {% for types in product.metafields.custom.type.value %}
-                              {% assign types = types | split: ":" %}
+                              {% assign type = types | split: ":" %}
                                 <li class="col-xs-6 text-center" style="margin-top: 20px;">{{ type[0] }}</li>
                                 {% unless forloop.last %}{% endunless %}
                             {% endfor %}
@@ -764,23 +775,23 @@
                         </ul>
                       </div>
                     {% endif %}
-                    {% if product.metafields.custom.colors %}
-                      <div id="tab-2" class="tab-pane fade">
+
+                    {% if product.metafields.custom.color %}
+                      <div id="tab-4" class="tab-pane fade">
                         <ul id="colors-list" style="list-style: none;">
                           <div class="row">
-                            {% for color in product.metafields.custom.colors.value %}
+                            {% for color in product.metafields.custom.color.value %}
                               {% assign colors = color | split: ":" %}
-                                <li class="col-xs-6 text-center" style="margin-top: 20px;">{{ color[0] }}</li>
+                                <li class="col-xs-6 text-center" style="margin-top: 20px;">{{ colors[0] }}</li>
                                 {% unless forloop.last %}{% endunless %}
                             {% endfor %}
                           </div>
                         </ul>
                       </div>
                     {% endif %}
-                  </div>
-  
-                </div>
 
+                  </div>
+                </div>
               </div>
 
               {% endif %}
