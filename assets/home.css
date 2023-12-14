@@ -1237,6 +1237,7 @@ body.hover_style3 .categoryslider .category_slider_content .cat-slider  {
   margin:  0 0 15px;
   z-index:  1;
   overflow:  hidden;
+  text-align: center;
 }
 .category-slider .tthometab-title.box-heading .ttcategoryslider-tab .view-all {
   float:  left;
@@ -2090,8 +2091,7 @@ div#annoucementbar  {
   top:  0;
   bottom:  0;
   left:  auto;
-  right:  20%;
-  height:  1px;
+  height:  2px;
   width:  40px;
   background:  rgba(255,  255,  255,  0.5);
   margin:  auto;
@@ -2120,7 +2120,7 @@ div#annoucementbar  {
   }
   #annoucementbar .announce-banner-content .announce-cnt  {
     font-size:  14px;
-    line-height:  16px;
+    line-height:  18px;
   }
 }
 @media(max-width: 991px)  {
@@ -2128,12 +2128,11 @@ div#annoucementbar  {
     padding:  16px 0;
   }
   #annoucementbar .announce-banner-content .announce-cnt  {
-    font-size:  13px;
-    line-height:  16px;
+    font-size:  17px;
+    line-height:  18px;
   }
   #annoucementbar .announce-banner-content .announce-cnt::after  {
     width:  30px;
-    right:  25%;
   }
 }
 @media(max-width: 600px)  {
@@ -2146,8 +2145,8 @@ div#annoucementbar  {
     right:  14%;
   }
   #annoucementbar .announce-banner-content .announce-cnt  {
-    font-size:  11px;
-    line-height:  14px;
+    font-size:  15px;
+    line-height:  18px;
   }
 }
 /*--------------------------Mobile bar sticky------------------------------*/
