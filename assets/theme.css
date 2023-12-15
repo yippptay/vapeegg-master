@@ -10222,7 +10222,7 @@ form.search-bar:hover .btn .icon.icon-search  {
     }
 @media only screen and (max-width: 1299px)  {
   .search-results li  {
-    width:  33.33%;
+    width:  25%;
   }
 }
 @media only screen and (max-width: 1199px)  {
@@ -10237,7 +10237,7 @@ form.search-bar:hover .btn .icon.icon-search  {
 }
 @media only screen and (max-width: 543px)  {
   .search-results li  {
-    width:  50%;
+    width:  33.3%;
   }
 }
 @media only screen and (max-width: 480px)  {
@@ -13470,7 +13470,8 @@ body .compare-model .max_compare  {
     -webkit-opacity:  1;
     visibility:  visible;
     left:  0px;
-    font-size:  12px;
+    font-size:  14px;
+    font-weight: 600;
     top:  22px;
   }
   .product-wrapper .custom_label  {

@@ -636,7 +636,7 @@ $(window).scroll(function(){
         items: 2
       },
       100: {
-        items: 1
+        items: 2
       }
     }
   });

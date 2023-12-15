@@ -2095,6 +2095,7 @@ div#annoucementbar  {
   width:  40px;
   background:  rgba(255,  255,  255,  0.5);
   margin:  auto;
+  display: none;
 }
 #annoucementbar .announce-banner-content .announce-cnt:last-child::after  {
   display:  none;
