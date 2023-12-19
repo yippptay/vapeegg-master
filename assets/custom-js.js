@@ -623,20 +623,23 @@ $(window).scroll(function(){
     autoplay: true,
     rewindNav: true,
     responsive: {
-      1550: {
-        items: 5
+      319: {
+        items: 1
       },
-      1300: {
-        items: 4
+      639: {
+        items: 2
       },
-      992: {
+      959: {
         items: 3
       },
-      481: {
-        items: 2
+      1279: {
+        items: 4
       },
-      100: {
-        items: 2
+      1599: {
+        items: 5
+      },
+      1919: {
+        items: 6
       }
     }
   });
@@ -920,17 +923,24 @@ $(window).scroll(function(){
     autoplaySpeed: 1500,
     dots : false,
     responsive: {
-      100: {
-        items: 1
-      },
-      620: {
-        items: 2,
-      },
-      1200: {
+      319: {
         items: 2
-      },   
-      1430: {
-        items: p_col
+      },
+      639: {
+        items: 2
+      },
+      959: {
+        items: 3
+      },
+      1279: {
+        items: 4
+      },
+      1599: {
+        items: 5
+      },
+      1919: {
+        // items: p_col
+        items: 6
       }
     }
   });

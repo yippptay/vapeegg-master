@@ -3064,8 +3064,7 @@ label.error  {
   width:  100%;
   margin:  0;
   padding:  10px 0;
-  border:  1px solid var(--color-border);
-    }
+}
 .pagination-wrap .infinite-scrolling  {
   float:  none;
   display:  inline-block;
@@ -11758,7 +11757,7 @@ ul#promo-carousel  {
   -webkit-opacity: 1;
 }
 #brands_list_slider .brand-bar__item {
-  padding: 30px;
+  padding: 15px;
   float: left;
   width: 100%;
 }
@@ -18186,6 +18185,7 @@ a.grid-link.collection-link span.grid-link__title:hover  {
     display:  flex;
     align-items:  center;
     justify-content:  space-between;
+    background: var(--color-bg-breadcrumb);
   }
   .filter-wrapper .showing  {
     justify-content:  flex-start;
@@ -20279,7 +20279,7 @@ div#shopify-section-sidebar-promoimage  {
 }
 .bestseller-collection .slider-bestproduct-wrap .best-product-div  {
   float:  left;
-  width:  100%;
+  width:  125%;
   position:  relative;
   background:  #fff;
   padding:  0 15px;
