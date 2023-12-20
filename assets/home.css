@@ -23,8 +23,16 @@
   margin:  0 0 -30px;
 }
 .home-slider ul.slides li a img {
-  width:  100%;
-  border-radius:  5px;
+  width:              100%;
+  border-radius:      1.25rem;
+  -webkit-transition: all 250ms ease-in-out 0s;
+  -moz-transition:    all 250ms ease-in-out 0s;
+  -ms-transition:     all 250ms ease-in-out 0s;
+  -o-transition:      all 250ms ease-in-out 0s;
+  transition:         all 250ms ease-in-out 0s;
+}
+.home-slider ul.slides li a img:hover {
+  opacity: 0.85;
 }
 .homeslider  {
   float:  left;
@@ -124,10 +132,10 @@
   background:  var(--color-btn-secondary);
     font:  500 14px/16px var(--font-stack-body);
       margin:  0 0 15px;
-  border-radius: 5px; 
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
--khtml-border-radius: 5px;
+  border-radius: 1.25rem; 
+-moz-border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
+-khtml-border-radius: 1.25rem;
       }
 .tt-homeslider .home-slider .homeslider .slider-content-wrap .slider-pricedesc  {
   font:  400 14px/16px var(--font-stack-body);
@@ -644,28 +652,24 @@
   float:  left;
   width:  100%;
   position:  relative;
-  border-radius:  5px;
+  border-radius:  1.25rem;
 }
 .right-banner .rightbanner-block a  {
   display:  block;
   position:  relative;
   overflow:  hidden;
-  border-radius:  5px;
+  border-radius:  1.25rem;
 }
 .right-banner .rightbanner-block a img  {
-  border-radius: 5px;
-  transition:  all 400ms ease-in-out 0s;
-  -webkit-transition:  all 400ms ease-in-out 0s;
-  -moz-transition:  all 400ms ease-in-out 0s;
-  -o-transition:  all 400ms ease-in-out 0s;
-  -ms-transition:  all 400ms ease-in-out 0s;
+  border-radius:      1.25rem;
+  transition:         all 250ms ease-in-out 0s;
+  -webkit-transition: all 250ms ease-in-out 0s;
+  -moz-transition:    all 250ms ease-in-out 0s;
+  -o-transition:      all 250ms ease-in-out 0s;
+  -ms-transition:     all 250ms ease-in-out 0s;
 }
 .right-banner .rightbanner-block a:hover img  {
-  transform:  scale(1.05);
-  -webkit-transform:  scale(1.05);
-  -moz-transform:  scale(1.05);
-  -o-transform:  scale(1.05);
-  -ms-transform:  scale(1.05);
+  opacity: 0.85;
 }
 .right-banner .rightbanner-block .banner-description  {
   position:  absolute;
@@ -760,7 +764,7 @@
 /*------------------------------TT cms right banner----------------------*/
 .ttcmsrightbanner .ttrightbanner  {
   margin:  0 0 30px;
-  border-radius:  5px;
+  border-radius:  1.25rem;
 }
 .ttcmsrightbanner .ttrightbanner:last-child  {
   margin:  0;
@@ -769,22 +773,18 @@
   display:  block;
   position:  relative;
   overflow:  hidden;
-  border-radius:  5px;
+  border-radius:  1.25rem;
 }
 .ttcmsrightbanner .ttrightbanner a img  {
-  border-radius:  5px;
-  transition:  all 400ms ease-in-out 0s;
-  -webkit-transition:  all 400ms ease-in-out 0s;
-  -moz-transition:  all 400ms ease-in-out 0s;
-  -o-transition:  all 400ms ease-in-out 0s;
-  -ms-transition:  all 400ms ease-in-out 0s;
+  border-radius:      1.25rem;
+  transition:         all 250ms ease-in-out 0s;
+  -webkit-transition: all 250ms ease-in-out 0s;
+  -moz-transition:    all 250ms ease-in-out 0s;
+  -o-transition:      all 250ms ease-in-out 0s;
+  -ms-transition:     all 250ms ease-in-out 0s;
 }
 .ttcmsrightbanner .ttrightbanner a:hover img  {
-  transform:  scale(1.05);
-  -webkit-transform:  scale(1.05);
-  -moz-transform:  scale(1.05);
-  -o-transform:  scale(1.05);
-  -ms-transform:  scale(1.05);
+  opacity: 0.85;
 }
 .ttcmsrightbanner .ttrightbanner .ttbanner-content  {
   position:  absolute;
@@ -1104,12 +1104,12 @@
 /*----------------------------------end-----------------------------------*/
 /* ================ category slider===================== */
 .category-slider .category_slider_content  {
-  float:  left;
-  width:  100%;
-  position:  relative;
-  border:  2px solid var(--color-border);
-  background:  #fff;
-  border-radius: 5px;
+  float:          left;
+  width:          100%;
+  position:       relative;
+  border:         2px solid var(--color-border);
+  background:   #fff;
+  border-radius:  1.25rem;
  }
 body.hover_style3 .categoryslider .category_slider_content .cat-slider  {
   padding:  0;
@@ -1302,7 +1302,7 @@ body.hover_style3 .categoryslider .category_slider_content .cat-slider  {
 .category-slider .category_slider_content .cat-slider .owl-theme .owl-nav .owl-prev::before,.category-slider .category_slider_content .cat-slider .owl-theme .owl-nav .owl-next::before {
   height: 40px;
   width: 40px;
-  line-height: 40px;
+  line-height: 38px;
 }
 .category-slider .category_slider_content .cat-slider .owl-theme .owl-nav .disabled.owl-prev::before,.category-slider .category_slider_content .cat-slider .owl-theme .owl-nav .disabled.owl-next::before,
 .category-slider .category_slider_content .cat-slider .owl-theme .owl-nav .disabled.owl-prev:hover::before,.category-slider .category_slider_content .cat-slider .owl-theme .owl-nav .disabled.owl-next:hover::before{
@@ -1504,7 +1504,7 @@ body.hover_style3 .categoryslider .category_slider_content .cat-slider  {
   position:  relative;
   display:  block;
   overflow:  hidden;
-  border-radius:  5px;
+  border-radius:  1.25rem;
 }
 .cmsblockbanner .banner .banner-content  {
   position:  absolute;
@@ -1552,10 +1552,10 @@ body.hover_style3 .categoryslider .category_slider_content .cat-slider  {
   background:  var(--color-btn-secondary);
     margin:  0 0 15px;
     font:  500 14px/16px var(--font-stack-body);
-border-radius: 5px; 
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
--khtml-border-radius: 5px;
+border-radius: 1.25rem; 
+-moz-border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
+-khtml-border-radius: 1.25rem;
       }
 .cmsblockbanner .ttbanner-wrap .banner-content .price_desc  {
   float:  left;
@@ -1566,19 +1566,15 @@ border-radius: 5px;
   font:  500 22px/24px var(--font-stack-body);
     }
 .cmsblockbanner .banner a img  {
-  transition: all .4s ease-in-out 0s;
-  -webkit-transition: all .4s ease-in-out 0s;
-  -moz-transition: all .4s ease-in-out 0s;
-  -o-transition: all .4s ease-in-out 0s;
-  -ms-transition: all .4s ease-in-out 0s;
-  border-radius: 5px;
+  transition:         all 250ms ease-in-out 0s;
+  -webkit-transition: all 250ms ease-in-out 0s;
+  -moz-transition:    all 250ms ease-in-out 0s;
+  -o-transition:      all 250ms ease-in-out 0s;
+  -ms-transition:     all 250ms ease-in-out 0s;
+  border-radius:      1.25rem;
 }
 .cmsblockbanner .banner a:hover img  {
-  transform:  scale(1.05);
-  -webkit-transform:  scale(1.05);
-  -moz-transform:  scale(1.05);
-  -o-transform:  scale(1.05);
-  -ms-transform:  scale(1.05);
+  opacity: 0.85;
 }
 @media(max-width: 1650px){
   .cmsblockbanner .banner .banner-content .title, .cmsblockbanner .banner .banner-content .subtitle {
@@ -1731,7 +1727,7 @@ border-radius: 5px;
   background:  #fff;
   padding:  15px 0;
   border:  2px solid #ffbf21;
-  border-radius:  5px;
+  border-radius:  1.25rem;
 }
 .slider-specialproduct-wrap .product-layouts{
   border: none;
@@ -1968,10 +1964,11 @@ border-radius: 5px;
 /*-----------------------------end---------------------------*/
 /*---------------------------Tt cms service------------------------*/
 #ttcmsservices .block_content  {
-  float:  left;
-  width:  100%;
-  border:  2px solid var(--color-border);
-  border-radius:  5px;
+  float:          left;
+  width:          100%;
+  border:         2px solid var(--color-border);
+  border-radius:  1.25rem;
+  background:     #FFF;
 }
 #ttcmsservices  {
   float:  left;
@@ -1979,12 +1976,14 @@ border-radius: 5px;
   position:  relative;
 }
 #ttcmsservices .block_content .service  {
-  float:  left;
-  width:  100%;
-  display:  flex;
-  align-items:  center;
+  float:            left;
+  width:            100%;
+  display:          flex;
+  align-items:      center;
   justify-content:  center;
-  padding:  24px 0;
+  padding:          24px 0;
+  border-radius:    1.25rem;
+  background:     #FFF;
 }
 #ttcmsservices .block_content .service .ttshipping_img.service-icon  {
   float:  none;
@@ -2025,7 +2024,6 @@ border-radius: 5px;
     }
 #ttcmsservices .block_content .owl-item  {
   position:  relative;
-  border-right:  1px solid var(--color-border);
 }
 #ttcmsservices .block_content .owl-item.active:last-child  {
   border:  none;

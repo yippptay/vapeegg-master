@@ -1,5 +1,5 @@
 <div data-section-id="{{ section.id }}" {% if settings.enable_animation != blank %} data-aos="fade-up" {% endif %} class="best-collection-product {% if section.settings.type_bg != "rgba(0,0,0,0)" %} has_bg{% endif %}">
-  <div class="page-width slider-bestproduct-inner {% if section.settings.parallax_enable %}parallex {% endif %}" data-source-url="{{ section.settings.image | img_url: 'master' }}" style="background-color:{{section.settings.bg_color}};background-image:url('{{ section.settings.image | img_url: 'master' }}'); {% if section.settings.parallax_enable %} background-position: 50% 65.8718%; {% else %} background-size: contain; {% endif %}">
+  <div class="page-width slider-bestproduct-inner {% if section.settings.parallax_enable %}parallex {% endif %}" data-source-url="{{ section.settings.image | img_url: 'master' }}" style="background-color:#F1F1F1;background-image:url('{{ section.settings.image | img_url: 'master' }}'); {% if section.settings.parallax_enable %} background-position: 50% 65.8718%; {% else %} background-size: contain; {% endif %}">
     <div class="container">
       <div class="slider-bestproduct-wrap">
         <div class="section-header">
