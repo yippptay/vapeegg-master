@@ -124,7 +124,7 @@
             {% assign has_refined = true %} 
             {% endif %}
             <div class="sidebar-block">
-              {% render 'sidebar-category', enable_sidecategory: section.settings.enable_sidecategory, linkedlist: section.settings.linkedlist, linkedlist_title: section.settings.linkedlist_title %}
+              {% comment %} {% render 'sidebar-category', enable_sidecategory: section.settings.enable_sidecategory, linkedlist: section.settings.linkedlist, linkedlist_title: section.settings.linkedlist_title %} {% endcomment %}
               {% render 'facets', results: collection, collapse_on_larger_devices: section.settings.collapse_on_larger_devices, show_filter: section.settings.show_filter %}
               {% render 'promo-banner', show_promo_banner: section.settings.show_promo_banner, promo_img: section.settings.promo_img, promo_link: section.settings.promo_link %}
             </div>
@@ -134,7 +134,7 @@
         {% endif %}
       </div>
     </header>
-    <div class="grid-uniform product-grid col-main">
+    <div class="grid-uniform product-grid col-main" style="margin: 0;">
       <div class="products-grid-view">
         {% comment %}
         Loop through our products in the current collection.

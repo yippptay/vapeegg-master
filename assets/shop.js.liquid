@@ -1921,7 +1921,7 @@
       })
     },
     sidebarMapTagEvents: function() {
-      if (jQuery(window).width() < 992) {
+      if (jQuery(window).width() < 1006) {
         jQuery(".collection_right .sidebar .widget > h4,.collection_left .sidebar .widget > h4,.blog-section .sidebar .widget > h4").addClass("toggle");
         jQuery(".collection_right .sidebar .widget,.collection_left .sidebar .widget,.blog-section .sidebar .widget").children(':nth-child(2)').css('display', 'none');
         jQuery(".collection_right .sidebar .widget.active,.collection_left .sidebar .widget.active,.blog-section .sidebar .widget.active").children(':nth-child(2)').css('display', 'block');
@@ -1930,7 +1930,7 @@
           jQuery(this).parent().toggleClass('active').children(':nth-child(2)').slideToggle("fast")
         })
       }
-      if (jQuery(window).width() < 992) {
+      if (jQuery(window).width() < 1006) {
         jQuery(".collection_right .sidebar-block .widget > h4,.collection_left .sidebar-block .widget > h4").addClass("toggle");
         jQuery(".collection_right .sidebar-block .widget,.collection_left .sidebar-block .widget ").children(':nth-child(2)').css('display', 'none');
         jQuery(".collection_right .sidebar-block .widget.active,.collection_left .sidebar-block .widget.active").children(':nth-child(2)').css('display', 'block');

@@ -8,7 +8,7 @@
         <div id="blockbanner-{{ block.id }}" class="banner col-sm-12">
           <a href="{% if block.settings.banner_link1 != blank %} {{ block.settings.banner_link1 }}{% else %}#{% endif %}">
             {% if block.settings.banner_image1 != blank %}
-            <img src="{{  block.settings.banner_image1 | img_url: "master" }}" alt="banner-image" />
+            <img src="{{  block.settings.banner_image1 | img_url: "master" }}" alt="banner-image" style="padding: 0;"/>
             {% endif %}
             <div class="banner-content {{ block.settings.text_position }}">
               <div class="banner-inner">

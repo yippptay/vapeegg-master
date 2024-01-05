@@ -60,7 +60,7 @@ The contents of the collection.liquid template can be found in /sections/collect
             {% assign has_refined = true %} 
             {% endif %}
             <div class="sidebar-block">
-              {% render 'sidebar-category', enable_sidecategory: section.settings.enable_sidecategory, linkedlist: section.settings.linkedlist, linkedlist_title: section.settings.linkedlist_title %}
+              {% comment %} {% render 'sidebar-category', enable_sidecategory: section.settings.enable_sidecategory, linkedlist: section.settings.linkedlist, linkedlist_title: section.settings.linkedlist_title %} {% endcomment %}
               {% render 'facets', results: collection, collapse_on_larger_devices: section.settings.collapse_on_larger_devices, show_filter: section.settings.show_filter %}
             </div> 
             {% render 'sidebar-bestsellers', show_best_products: section.settings.show_best_products,  bestseller: section.settings.bestseller, product_rows: section.settings.product_rows, pro_img_width_height: section.settings.pro_img_width_height, limit: section.settings.limit %}  

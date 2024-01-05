@@ -2,7 +2,7 @@
 <div class="sidebar__inner">
   <div class="collection_sidebar">
     <div class="sidebar-block">
-      {% render 'sidebar-category', enable_sidecategory: section.settings.enable_sidecategory, linkedlist: section.settings.linkedlist, linkedlist_title: section.settings.linkedlist_title %}
+      {% comment %} {% render 'sidebar-category', enable_sidecategory: section.settings.enable_sidecategory, linkedlist: section.settings.linkedlist, linkedlist_title: section.settings.linkedlist_title %} {% endcomment %}
       {% if current_tags == blank %}
       {% assign has_refined = false %} 
       {% else %}
