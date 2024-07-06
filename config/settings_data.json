@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "display_preloader": true,
@@ -495,7 +504,7 @@
             "type": "tt_mm_menu1",
             "settings": {
               "title": "Disposables",
-              "button_link": "shopify:\/\/collections\/disposables",
+              "button_link": "shopify:\/\/collections\/vape-disposables",
               "tt_mn_class": "",
               "tt_mn_sub_heading": "",
               "tt_mn_subheading_bg": "#febb01",
